@@ -1,2 +1,2 @@
 ## Web Solar System
-This program uses java script and shaders to represent an orbiting solar system. Mouse zoom in, mouse clik, and the WASD keys are supported for traversal. 
+This program uses java script and shaders to represent an orbiting solar system. Mouse zoom in, mouse click, and the WASD keys are supported for traversal. The system itself has all orbiting planets at different rates, all of which orbit about themselves as well as varying sppeds. The sun uses phong light shaders which allow a more realistic light output and surface reflection. The earth contains a moon and a day night cycle as well. This program does not use a raytracer but rasterization. 
