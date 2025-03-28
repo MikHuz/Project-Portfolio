@@ -9,9 +9,9 @@ The models were trained in a virtual environment using Conda and WSL to run a Ju
 |--------|-----------------|-----------|
 | ![Input Image](Image.png) | ![Prediction](prediction.png) |  ![Mask](testmask.png) |
 
-These images visualize how one of my U-NET models processes an MRI scan, producing a predicted segmentation compared to the actual mask.
+These images visualize how one of the models process an MRI scan, producing a predicted segmentation compared to the actual mask.
 
-### Training Progress:
+### Excerpt of Training Progress:
 | Development Loss | DICE & IoU Metrics |
 |-----------------|-------------------|
 | ![Dev Loss](U-NET/DevLoss.png) | ![DICE/IOU](U-NET/DICE_IOU.png) |
