@@ -30,10 +30,10 @@
  */
 import java.util.Scanner;
 import java.util.TreeMap;
-class Main 
-{
-   static class DirectedGraph{
+
+class DirectedGraph{
     TreeMap<Integer, TreeMap<Integer, Integer>> adjList = new TreeMap<>();
+    
         public DirectedGraph(){
             //System.out.println("IN Constructor");
             adjList = new TreeMap<>();
@@ -75,7 +75,6 @@ class Main
                 }
             }
         }
-    }
     public static void main(String[] args) 
     {
         
