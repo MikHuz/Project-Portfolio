@@ -1,4 +1,5 @@
-## This model implemented an attention U-Net architecture. 
+## This model implemented an attention U-Net architecture.
+While I managed to get the code for the attention gates, the limitations of my GPU didn't allow me to properly train and tune it for better results    
 ### Attention U-NET architecture
 
 The Attention U-Net model is an extension of the original U-Net architecture, incorporating attention mechanisms to improve segmentation accuracy, especially in complex images with varying levels of detail. Key functionality of the Attention U-Net model includes:
