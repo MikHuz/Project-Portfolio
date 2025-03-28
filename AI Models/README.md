@@ -1,19 +1,22 @@
 ## Biomedical Image Models
 
-These models are convolutional neural networks trained on my local GPU, which work with MRI brain scans to create outlines of possible tumors or abnormalities. This project has undergone many iterations, training cyles, and tuning manipulations to come up many models, and this folder showcases a few models trained.
+These models are convolutional neural networks trained on my local GPU, designed to analyze MRI brain scans and outline possible tumors or abnormalities. This project has undergone multiple iterations, training cycles, and tuning adjustments to develop several models, which are showcased in this folder.
 
-The models used a virtual environment utilizing Conda and WSL to run a jupyter notebook on VScode locally, which would access your local GPU for training. It used PyTorch, a Python library, to implement and train models with various architectures to segment any abnormalities and tumors from inputted brain MRI images. 
+The models were trained in a virtual environment using Conda and WSL to run a Jupyter Notebook in VS Code, leveraging a local GPU. They were implemented in PyTorch, a Python library, to train and optimize various architectures for segmenting abnormalities and tumors from MRI brain scans.
 
-Example:
+### Example:
+| Image | Model Prediction | True Mask |
+|--------|-----------------|-----------|
+| ![Input Image](Image.png) | ![Prediction](prediction.png) | ![Mask](mask.png) |
 
-![Project Screenshot](Image.png) ![Project Screenshot](prediction.png) ![Project Screenshot](mask.png)
+These images visualize how one of my U-NET models processes an MRI scan, producing a predicted segmentation compared to the actual mask.
 
-           Image                             Model Prediction                     True Masks
+### Training Progress:
+| Development Loss | DICE & IoU Metrics |
+|-----------------|-------------------|
+| ![Dev Loss](U-NET/DevLoss.png) | ![DICE/IOU](U-NET/DICE_IOU.png) |
 
-These images reflect one of my U-NET models visuzalizing its training cycle.
-![Project Screenshot](U-NET/DevLoss.png) ![Project Screenshot](U-NET/DICE_IOU.png)
-
--Dev Loss is used to identify how the model is training each cycle or epoch. The lower the better. The second image showcases the two common metrics for a models accuracy during each epoch
-
+- **Dev Loss:** Tracks how the model improves during training; lower values indicate better performance.  
+- **DICE & IoU Metrics:** Measure segmentation accuracy per epoch, with higher values representing better model predictions.
 
 
