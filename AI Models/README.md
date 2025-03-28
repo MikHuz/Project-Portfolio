@@ -1,6 +1,6 @@
 ## Biomedical Image Models
 
-These models convolutional neural networks trained on my local GPU, which work with MRI brain scans to create outlines of possible tumors or abnormalities. This project has undergone many iterations, training cyles, and tuning manipulations to come up many models, and this folder showcases a few models I worked on.
+These models are convolutional neural networks trained on my local GPU, which work with MRI brain scans to create outlines of possible tumors or abnormalities. This project has undergone many iterations, training cyles, and tuning manipulations to come up many models, and this folder showcases a few models I worked on.
 
 ![Project Screenshot](U-NET/DevLoss.png)
 
