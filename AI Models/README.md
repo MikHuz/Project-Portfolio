@@ -7,7 +7,7 @@ The models were trained in a virtual environment using Conda and WSL to run a Ju
 ### Example:
 | Image | Model Prediction | True Mask |
 |--------|-----------------|-----------|
-| ![Input Image](Image.png) | ![Prediction](prediction.png) |  |
+| ![Input Image](Image.png) | ![Prediction](prediction.png) |  ![Mask](mask.png) |
 
 These images visualize how one of my U-NET models processes an MRI scan, producing a predicted segmentation compared to the actual mask.
 
