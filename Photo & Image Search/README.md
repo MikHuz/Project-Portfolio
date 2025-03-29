@@ -8,6 +8,6 @@ Zooming in on videos naturally applies with the fullscreen function provided by 
 
 NOTE:The AI generation unfortunately no longer appears to work due to expired API keys or subscriptions.
 
-To Run: Install the following python modules: requests, flask, bootstrap-flask. Once done, cd into the project, and run the project with "flask --app app --debug run"
+To Run: Make sure to install the following python modules: requests, flask, bootstrap-flask. Once done, cd into the project, and run the project with "flask --app app --debug run"
 
 Future Work: Stylizing the project a bit more to appear more attractive, adding options for a user to manage how much results they wish to display. 
