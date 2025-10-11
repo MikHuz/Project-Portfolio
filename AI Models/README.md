@@ -9,7 +9,7 @@ The goal is to **enhance diagnostic accuracy**, enabling faster treatment decisi
 
 ## Features / Highlights
 - **U-Net and Encoder–Decoder architectures** implemented for biomedical image segmentation.  
-- Achieved up to **90.9% Dice Coefficient** and **83.3% IoU**, representing a **4.5% improvement** over the provided baseline benchmark.  
+- Achieved up to **90.9% Dice Coefficient** and **83.3% IoU**, representing a **5.6% improvement** over the provided baseline benchmark.  
 - Trained locally on my GPU using a **Conda virtual environment** and **WSL** integration with **VS Code**.  
 - Visualization of training progress, loss metrics, and model predictions compared to ground-truth masks.  
 - Demonstrates strong understanding of model training, tuning, and evaluation in a healthcare-relevant context.
