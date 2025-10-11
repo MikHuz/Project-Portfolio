@@ -1,22 +1,67 @@
-## Biomedical Image Models
+# 🧠 Biomedical Image Segmentation Models
 
-These models are convolutional neural networks trained on my local GPU, designed to analyze MRI brain scans and outline possible tumors or abnormalities. This project has undergone multiple iterations, training cycles, and tuning adjustments to develop many models, a few of which are showcased in this folder.
+## Overview
+Collaborative project with **Cedars-Sinai Medical Center** exploring AI for diagnostic imaging.
 
-The models were trained in a virtual environment using Conda and WSL to run a Jupyter Notebook in VS Code, leveraging a local GPU. They were implemented in PyTorch, a Python library, to train and optimize various architectures for segmenting abnormalities and tumors from MRI brain scans.
 
-### Example:
+This project applies **deep learning for medical image segmentation** to assist in the early and accurate detection of brain tumors. Using convolutional neural networks (CNNs) built in **PyTorch**, these models analyze MRI brain scans and highlight regions that may represent abnormalities or tumors.  
+The goal is to **enhance diagnostic accuracy**, enabling faster treatment decisions and reducing diagnostic errors through AI-assisted imaging.
+
+## Features / Highlights
+- **U-Net and Encoder–Decoder architectures** implemented for biomedical image segmentation.  
+- Achieved up to **90.9% Dice Coefficient** and **83.3% IoU**, representing a **4.5% improvement** over the provided baseline benchmark.  
+- Trained locally on my GPU using a **Conda virtual environment** and **WSL** integration with **VS Code**.  
+- Visualization of training progress, loss metrics, and model predictions compared to ground-truth masks.  
+- Demonstrates strong understanding of model training, tuning, and evaluation in a healthcare-relevant context.
+
+## Technologies Used
+- **Python**  
+- **PyTorch** (Deep Learning Framework)  
+- **Jupyter Notebooks**  
+- **Conda / WSL / VS Code** (Development Environment)  
+- **Kaggle Datasets** (MRI Brain Scans)  
+- **Matplotlib / NumPy / Pandas** (Data Visualization & Preprocessing)
+
+## Setup Instructions
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MikHuz/AI-Models.git
+   cd AI-Models
+   ```
+2. **Create and activate the Conda environment**
+   ```bash
+   conda create -n ai-models python=3.9
+   conda activate ai-models
+   ```
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Open Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
+5. **Run the training notebook**
+   - Select a model (U-Net or Encoder-Decoder).
+   - Load MRI dataset paths in the configuration cell.
+   - Execute all cells to begin training.
+
+> ⚠️ **Note:** An NVIDIA CUDA-enabled GPU is recommended for efficient training.
+
+## Demo
+### Sample Prediction
 | Image | Model Prediction | True Mask |
-|--------|-----------------|-----------|
-| ![Input Image](Image.png) | ![Prediction](prediction.png) |  ![Mask](testmask.png) |
+|--------|------------------|------------|
+| ![Input Image](Image.png) | ![Prediction](prediction.png) | ![Mask](testmask.png) |
 
-These images visualize how one of the models process an MRI scan, producing a predicted segmentation compared to the actual mask.
+These examples illustrate how the U-Net model segments MRI scans, highlighting tumor boundaries compared to ground truth.
 
-### Excerpt of Training Progress:
+### Training Progress
 | Development Loss | DICE & IoU Metrics |
-|-----------------|-------------------|
+|------------------|--------------------|
 | ![Dev Loss](U-NET/DevLoss.png) | ![DICE/IOU](U-NET/DICE_IOU.png) |
 
-- **Dev Loss:** Tracks how the model improves during training; lower values indicate better performance.  
-- **DICE & IoU Metrics:** Measure segmentation accuracy per epoch, with higher values representing better model predictions.
+- **Development Loss:** Monitors optimization progress — lower values indicate better convergence.  
+- **Dice & IoU Metrics:** Quantify segmentation accuracy per epoch — higher values reflect more accurate masks.
 
 
