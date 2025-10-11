@@ -1,0 +1,144 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-align: center;
+  min-width:0px;
+}
+*::before{
+ padding:0;
+  margin:0;
+}
+*::after{
+ padding:0;
+  margin:0;
+}
+html{
+    background-color: #495E57;
+    min-height: 100vh;
+    font-size:85px/*64pt for largest font size according to style guide*/
+    /*All fonts will use fractions of this size, which closely correspond to the listed pt size*/
+}
+body{
+  min-height: 100%;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex: 1; 
+}
+h1 {font: 500 1rem 'Markazi Text', 'Karla', sans-serif; /* Display Titles 64pt */}
+h2 {font: 400 calc(1rem * 0.625) 'Markazi Text', sans-serif; /* Sub heading 40pt */}
+h3 {font:bold calc(1rem*0.28125) 'Markazi Text'/* Card title*/}
+.call-to-attention {font: 500 calc(1rem * 0.28125) 'karla', sans-serif; /* 18pt */}
+li{
+  font: 400 calc(1rem * 0.25) 'Karla', sans-serif; /* List items 16pt */
+  list-style-type: none;
+}
+p {font: 400 calc(1rem * 0.25) 'Karla', sans-serif; line-height: 1.5;/* Paragraph Text 16pt */}
+a{font: 500 calc(1rem * 0.28125) 'karla', sans-serif;color:black;  transition:0.3s;}
+span{font: 500 calc(1rem * 0.28125) 'karla', sans-serif;}
+label{font: 500 calc(1rem * 0.28125) 'karla', sans-serif; color:#EDEFEE; /* 18pt */}
+input, textarea,select{
+  font: 400 calc(1rem * 0.25) 'Karla', sans-serif; 
+  border-radius: 16pt;line-height: 1.5; 
+  border:1.5pt solid black; 
+  height:calc(1rem * 0.25 *2);/*16pt*/
+}
+option{font: 400 calc(1rem * 0.25) 'Karla', sans-serif;}
+button{
+  font: 700 calc(1rem * 0.28125) 'karla', sans-serif; 
+  background-color:#F4CE14; 
+  border-radius: 16px;
+  border:2px solid black;
+  cursor: pointer;
+  padding:0.5em 0;
+  width:100%;
+  margin-bottom:0.1rem;
+  transition:0.2s;
+}
+sup{
+  vertical-align: text-top;
+  color:#EE9972;
+  font: 400 calc(1rem * 0.30) 'Karla', sans-serif;
+}
+input[type="radio"]{
+  height:auto;
+  margin-right:0.5em;
+  margin-left: 0.5em;
+  transform:scale(1.5);
+  accent-color: #F4CE14;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 75px; 
+  }
+}
+@media (max-width: 668px) {
+  html {
+    font-size: 70px; 
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 60px; /* ~45pt */
+  }
+  input[type="radio"]{
+      transform:scale(1.2);
+  }
+}
+@media (max-width: 402px) {
+  html {font-size: 56px; /* ~42pt */}
+}
+@media (max-width: 356px) {
+  html {font-size: 48px; /* ~36pt */}
+}
+
+/*PSuedo-class styles*/
+button:hover{
+  transform:scale(1.05);
+  transition:0.2s;
+}
+input:focus{
+  border:3px solid #F4CE14;
+  outline:none;
+  transform:scale(1.02)
+}
+input[type="radio"]:focus{
+   transform:scale(1.5)
+}
+select:focus{
+   border:3px solid #F4CE14;
+   outline:none;
+   transform:scale(1.02)
+}
+textarea:focus{
+  outline:none;
+  border:3px solid #F4CE14;
+}
+a:hover{
+  transform:scale(1.2);
+  transition:0.3s;
+}
+
+.buttons{/*Back button with Continue/callToAction button Container*/
+  width:95%;
+  display:flex;
+  flex-direction: row;
+  column-gap:0.1rem;
+}
+.buttons button:first-child{
+    background-color: #EE9972;
+    flex:1 1 35%;
+}
+.buttons button:last-child{
+    flex:1 1 65%;
+}
+.buttons button:last-child:hover{
+    flex:1 1 65%;
+    transform:scale(1.03)
+}
+

@@ -1,0 +1,317 @@
+/*Header*/
+header nav{
+border:2px solid black;
+ height:10vh;
+ background-color: #FBDABB;
+ width:100%;
+}
+header nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    list-style-type: none;
+    height:100%;
+}
+header nav a{
+    display: flex;        
+    justify-content: center;  
+}
+header nav img {
+  height: auto;       
+  width: auto;  
+   
+}
+.header-text{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.header-text> *{
+    margin:0 5%;
+}
+.header-text h1{
+    color:#F4CE14;
+}
+.header-text h2{
+    color:#EDEFEE;
+}
+/*Header*/
+/*Table Selection Page*/
+.table-selection-form{
+    width:70%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(7,auto );
+    grid-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    grid-template-areas:
+    "table-header table-header"
+    "img1 img2"
+    "date-box time-box"
+    "guest-box guest-box"
+    "occasion-box occasion-box"
+    "preference-box preference-box"
+    "table-availability-box table-availability-box"
+    "reservation-button reservation-button";
+}
+@media (max-width: 668px){.table-selection-form{width:90%;}}
+.form-box{
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width:100%;
+    min-width:0px;
+}
+#img1{
+    width:100%;
+    height:auto;
+    grid-area: img1;
+    border-radius: 16pt;
+}
+#img2{
+    width:100%;
+    height:auto;
+    grid-area: img2;
+    border-radius: 16pt;
+}
+#table-header{
+    grid-area: table-header;
+}
+.date-box{
+    grid-area: date-box;
+}
+.time-box{
+    grid-area: time-box;
+}
+.guest-box{
+    grid-area: guest-box;
+}
+.occasion-box{
+    grid-area: occasion-box;
+}
+.preference-box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    grid-area: preference-box;
+    width:100%;
+}
+.preference-box span{
+    color:#EDEFEE;
+    flex:1 1 100%;
+}
+.preference-box label{
+    color:black;
+    flex:0 1 auto;
+}
+.table-availability-box{
+    grid-area: table-availability-box;
+}
+#reservation-btn{
+    grid-area: reservation-button;
+}
+/*Table Selection Page*/
+/*Customer Details Page*/
+#reserve-reminder-message > span:first-child{
+    color: #F4CE14;
+    font-weight:500;
+}
+#reserve-reminder-message > span:nth-child(2){
+    color: #EE9972;
+    font-weight:500;
+}
+#reserve-reminder-message > span:last-child{
+    color: black;
+    font-weight:700;
+}
+.customer-details-form{
+    width:60%;
+    margin:0 auto;
+    margin-top:10px;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16pt;
+    row-gap:0.2rem;
+}
+@media (max-width: 668px){.customer-details-form{width:100%;}}
+.customer-details-form > div{
+   width:90%;
+}
+.customer-details-form .form-box label{
+}
+.customer-details-form .form-box input{
+   padding:0.25em;
+}
+.customer-details-form .form-box textarea{
+    height:7em;
+    max-width:100%;
+    min-width:100%;
+    min-height:calc(1rem * 0.25 *2);
+}
+.error{
+    color:#EE9972;
+}
+/*Customer Details Page*/
+/*Payment Page*/  
+#payment-form{
+    width:60%;
+    margin:0 auto;
+    margin-top:10px;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16pt;
+    gap:0.1rem;
+}
+@media (max-width: 768px){#payment-form{width:100%;}}
+
+.payment-input{
+    width:95%;
+    display:flex;
+    flex-direction: column; 
+    align-items:flex-start;
+    row-gap:5px;
+}
+.payment-input>*{width:100%;flex-grow:0}
+.payment-input input{
+    padding:1em;
+    text-align: left
+}
+.payment-input> label{
+    text-align:left;
+}
+.payment-input-row{
+    display:flex;
+    flex-direction: row;
+    width:95%;
+    justify-content: space-evenly;
+    column-gap: 10px;;
+}
+@media (max-width: 900px) {
+    .payment-input-row  .error{
+       font: 500 calc(1rem * 0.25125) 'karla', sans-serif;
+    }
+}
+.payment-input-row > .payment-input{/*Three columns on Page*/
+    display:flex;
+    flex-direction: column; 
+    align-items:flex-start;
+   
+    row-gap:5px;
+}
+.payment-input:last-child{
+    align-items: left;
+}
+#credit-logo{
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 16pt;
+      height:46.5px;
+      padding:6px;
+      width:auto;  
+}
+@media (max-width:768px){#credit-logo{height:41.5px;}}
+@media (max-width:668px){#credit-logo{height:39px;}}
+@media (max-width:500px){#credit-logo{height:34px;}}
+@media (max-width:302px){#credit-logo{height:32px;}}
+.payment-confirmation{
+    display:flex;
+    flex-direction:row;
+    width:95%;
+    justify-content: space-between;
+}
+.payment-error{
+    height:fit-content;
+    font-size:10px;
+}
+/*Payment Page*/ 
+/*Confirmation Page*/
+#confirmation-page{
+    width:90%;
+    margin:0 auto;
+    margin-top:0.2rem;
+    background-color: #2E8B57;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 16pt;
+    gap:10px;
+    text-align: center;
+}
+#confirmation-page h2{
+    margin-top:0.5em;
+    line-height:0;
+    margin-top:0.2rem;
+    line-height: 1;;
+   
+}
+#confirmation-page span:first-of-type{
+    color:#EDEFEE
+}
+#confirmation-page span:not(:first-of-type){
+    color:black
+}
+#home-btn{
+    width:50%;
+}
+/*Confirmation Page*/ 
+/*Footer*/
+footer{
+    background-color: #FBDABB;
+    border-top:2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    width:100%;
+    margin-top:0.25rem;
+}
+footer a{display: inline-block;}
+footer a:hover {
+  transform: scale(1.2);
+  transition:0.3s;
+}
+footer > div{
+    margin:0.1rem 0;
+}
+footer img{
+    align-self:center;
+}
+.footer-links{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-contact{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-contact p{
+    font-weight: 600;;
+}
+.footer-contact > div ~ p:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.footer-links a{
+    font-weight:700;
+}
+footer li {
+  text-align: left;
+}
+footer img{height:1.5rem;width:auto;}
+@media (max-width:668px){footer img{height:1.2rem;width:auto;}}
+@media (max-width:500px){footer img{height:1.2rem;width:auto;}}
+/*Footer*/
