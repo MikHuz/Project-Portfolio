@@ -1,0 +1,48 @@
+<!--Michael Huziy -->
+<html>
+
+<head>
+<title>Solar System</title>
+
+
+<!-- math -->
+<script src="math/vector3.js"></script>
+<script src="math/vector4.js"></script>
+<script src="math/matrix4.js"></script>
+
+<!-- utility code -->
+<script src="misc/input.js"></script>
+<script src="misc/time.js"></script>
+<script src="misc/utils-gl.js"></script>
+<script src="misc/utils-loading-promises.js"></script>
+
+<!-- geometry code -->
+<script src="misc/webgl-geometry-json.js"></script>
+<script src="misc/webgl-geometry-quad.js"></script>
+
+<script src="misc/camera.orbit.js"></script>
+<script src="Solar_System.js"></script>
+
+<link rel="shortcut icon" href="">
+
+<style>
+    /* center the canvas on the screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* remove scrollbars */
+}
+
+canvas {
+    display: block;        /* removes default inline spacing */
+    width: 100vw;          /* viewport width */
+    height: 100vh;         /* viewport height */
+}
+</style>
+</head>
+
+<body>
+    <canvas id="webgl-canvas" width="1920" height="1080"></canvas>
+</body>
+
+</html>
