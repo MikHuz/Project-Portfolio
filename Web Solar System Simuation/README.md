@@ -1,10 +1,10 @@
-# Web Solar System
+# Web Solar System Simulation
 
 ## Overview
 
-This project is an interactive 3D simulation of the solar system, built using **JavaScript** and **GLSL shaders**. Users can explore the system with mouse controls (zoom and click) and **WASD keys** for movement. Each planet orbits at unique speeds and angles while rotating on its own axis, providing a realistic simulation of celestial mechanics.  
+This project is an interactive 3D simulation of the solar system, built using **WebGL**, **JavaScript** and **GLSL shaders**. Users can explore the system with mouse controls (zoom and click) and **WASD keys** for movement. Each planet orbits at unique speeds and angles while rotating on its own axis, providing a realistic simulation of celestial mechanics.  
 
-The Sun is rendered with **Phong lighting shaders**, creating realistic illumination and surface reflections. The Earth includes a moon and a **dynamic day-night cycle**, further enhancing the visual realism. Rendering is performed using **rasterization**, not ray tracing.
+The Sun is rendered with **Phong lighting shaders**, creating realistic illumination and surface reflections. The Earth includes a moon and a **dynamic day-night cycle**, further enhancing the visual realism. Rendering is performed using **rasterization** over **ray tracing**.
 
 ---
 
@@ -14,14 +14,14 @@ The Sun is rendered with **Phong lighting shaders**, creating realistic illumina
 - Unique orbital paths and rotational speeds for each planet  
 - Earth-Moon system with dynamic day-night cycle  
 - Realistic lighting using **Phong shaders**  
-- Uses **rasterization** for efficient rendering over **raytracing**
+- Uses **rasterization** for efficient rendering
 - All planetary motion powered by **JavaScript matrix and vector math**  
 - Modular design, allowing easy addition of more celestial bodies  
 
 ---
 
 ## Technologies Used
-
+- **WebGL** – GPU-accelerated rendering engine for 3D graphics
 - **JavaScript** – Core logic for orbital mechanics and simulation  
 - **GLSL Shaders** – Phong lighting and surface rendering  
 - **HTML / CSS / Canvas API** – Rendering context for WebGL  
