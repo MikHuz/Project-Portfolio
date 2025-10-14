@@ -13,7 +13,7 @@ Rather than averaging pixels (which causes blur), it takes the **median value** 
 
 Below are some of the source frames used:
 
-| Input Frames |  |  |
+| | Input Frames  |  |
 |:--:|:--:|:--:|
 | ![](images/filter_odd_imgs/AdWLrEX9jK.png) | ![](images/filter_odd_imgs/C6jqwts7Po.png) | ![](images/filter_odd_imgs/Drkvv0rPyI.png) |
 | ![](images/filter_odd_imgs/GWYn2kQYvo.png) | ![](images/filter_odd_imgs/OJbgEgP8EE.png) | ![](images/filter_odd_imgs/OLPCdimSmt.png) |
