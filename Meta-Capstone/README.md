@@ -4,7 +4,9 @@
 
 This project is a **multi-page responsive React web application** that simulates a complete restaurant reservation workflow, developed as part of a course capstone project.  
 
-The app allows users to go through each step of the reservation process—from selecting a date and time to confirming their booking—with a clean, accessible interface.
+The app guides users through each step of the reservation process — from selecting a date and time to confirming their booking — with a clean, accessible, and user-friendly interface.  
+
+The app was **prototyped in Figma(included here)** and built in adherence to a **style guide** for a professional and cohesive user experience.
 
 ### 🗂️ Pages Included
 - **Reserve a Table:** Select date, time, guests, and seating preferences  
