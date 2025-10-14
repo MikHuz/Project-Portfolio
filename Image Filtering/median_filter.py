@@ -1,4 +1,3 @@
-#Michael Huziy
 '''
 This program performs median filtering on a set of images to reduce noise and transient artifacts. 
 
