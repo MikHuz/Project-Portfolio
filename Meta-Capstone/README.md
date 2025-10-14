@@ -8,13 +8,6 @@ The app guides users through each step of the reservation process — from selec
 
 The app was based on a **user persona**, **prototyped in Figma(included here)** and built in adherence to a **style guide**, for a professional and cohesive user experience.
 
-### 🗂️ Pages Included
-- **Reserve a Table:** Select date, time, guests, and seating preferences  
-- **Customer Details:** Collect user contact information  
-- **Payment:** Simulated payment processing  
-- **Confirmation:** Display a summary and confirmation of the reservation  
----
-
 ## ⚙️ Technologies Used
 
 | Technology | Purpose |
