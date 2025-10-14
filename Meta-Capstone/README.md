@@ -1,54 +1,55 @@
-# Restaurant Reservation Project
+# 🍽️ Restaurant Reservation App
 
-## Overview
+## 🧭 Overview
 
-This is a multi-page React project simulating a restaurant reservation workflow, built as part of a course assignment. The app includes the following pages:
+This project is a **multi-page responsive React web application** that simulates a complete restaurant reservation workflow, developed as part of a course capstone project.  
 
-- **Reserve a Table:** Select date, time, guests, and preferences  
+The app allows users to go through each step of the reservation process—from selecting a date and time to confirming their booking—with a clean, accessible interface.
+
+### 🗂️ Pages Included
+- **Reserve a Table:** Select date, time, guests, and seating preferences  
 - **Customer Details:** Collect user contact information  
-- **Payment:** Capture payment information securely (simulated)  
-- **Confirmation:** Show reservation confirmation and summary  
+- **Payment:** Simulated payment processing  
+- **Confirmation:** Display a summary and confirmation of the reservation  
+---
 
-> **Note:** This project is for learning and demonstration purposes only and is **not intended for production use**.
+## ⚙️ Technologies Used
+
+| Technology | Purpose |
+|-------------|----------|
+| **React** | Frontend UI library for building components |
+| **Vite** | Fast development and optimized build tool |
+| **React Context** | Manages shared state between multiple pages |
+| **Jest** | Unit testing framework for components and logic |
+| **CSS / HTML** | Responsive design and layout |
+| **Figma** | Used for prototyping and following a style guide |
 
 ---
 
-## Technologies Used
+## 🌟 Features
 
-- **React** – Frontend UI library  
-- **Vite** – Modern development and build tool  
-- **React Context** – State management across multiple pages  
-- **Jest** – Unit testing framework for component and functionality testing  
-- **CSS / HTML** – Styling and layout for responsive design  
-- **Figma** – Prototype of the site adhering to a style guide
-
----
-
-## Features
-
-- Multi-step form navigation across pages  
-- Client-side validation with accessible error messaging  
-- State management to preserve data between steps  
-- Simulated submission process and confirmation display  
-- Unit test coverage using **Jest**  
-- Accessibility best practices including labels, ARIA attributes, and live regions  
+- 🧩 Multi-step form navigation across pages  
+- ✅ Client-side validation with accessible error messages  
+- 🔄 Persistent state management with **React Context** between form steps  
+- 💳 Simulated **API calls** for reservation submission and confirmation  
+- 🧪 Unit test coverage using **Jest** for core functionality  
+- ♿ Accessibility best practices with semantic labels, ARIA attributes, and live regions  
+- 📱 **Responsive CSS design** ensuring usability across desktop and mobile devices  
 
 ---
 
-## Installation
+## 🛠️ Installation & Setup
 
-1. Clone the repo
+Follow the steps below to run the project locally.
 
-   git clone https://github.com/MikHuz/Meta-Capstone.git
+### 1️⃣ Clone the Repository
+      git clone https://github.com/MikHuz/Meta-Capstone.git
 
-3. cd into the project directory
-   
-   Open a terminal and type "cd *directory path*"
+### 2️⃣ Navigate to the Project Directory
+      Open a terminal and type "cd *directory path*"
 
-4. Install dependencies from the terminal
+### 3️⃣ Install Dependencies
+      Type in "npm install" in the terminal
 
-   Type "npm install"
-
-5. Run the project
-
-   Type in "npm run dev". Open your browser to http://localhost:5173 (default Vite port) to explore the app.
+### 4️⃣ Run the Vite Development Server
+      Type in npm run dev. Open your browser to http://localhost:5173 (default Vite port) to explore the app.
