@@ -6,7 +6,7 @@ This project is a **multi-page responsive React web application** that simulates
 
 The app guides users through each step of the reservation process — from selecting a date and time to confirming their booking — with a clean, accessible, and user-friendly interface.  
 
-The app was **prototyped in Figma(included here)** and built in adherence to a **style guide** for a professional and cohesive user experience.
+The app was based on a **user persona**, **prototyped in Figma(included here)** and built in adherence to a **style guide**, for a professional and cohesive user experience.
 
 ### 🗂️ Pages Included
 - **Reserve a Table:** Select date, time, guests, and seating preferences  
