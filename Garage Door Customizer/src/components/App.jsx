@@ -1,15 +1,14 @@
 import { useState, useEffect,useRef} from 'react'
 import { Routes, Route, Link,useLocation,useNavigate,useParams} from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import './css/index.css'
-import './css/Home.css'
+import '../css/index.css'
+import '../css/Home.css'
 import DoorSelector from "./DoorSelector.jsx";
 import Build from './Build.jsx'
 import SubmittedDoor from './SubmittedDoor.jsx'
-import {getDoors} from './door_data.js'
-import {getHomeImages} from './home_door_images.js'
-import {getSubTypeImages } from './subtype_door_images.js';  
-import RaisedPanel from './assets/door_imgs/traditional/Raised_Panel.jpg';
+import {getDoors} from '../utils/door_data.js'
+import {getHomeImages} from '../utils/home_door_images.js'
+import {getSubTypeImages } from '../utils/subtype_door_images.js';  
 import doorgiLogo from '/logo.png'
 /*Home Images*/
 const tradDoorsImages = getHomeImages('traditional')

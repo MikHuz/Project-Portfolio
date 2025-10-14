@@ -1,118 +1,116 @@
 /*Traditional Doors*/
-import RaisedPanel from './assets/door_imgs/traditional/Raised_Panel.jpg';
-import StampedCarriage from './assets/door_imgs/traditional/Stamped_Carriage_House.jpg';
-import StampedShaker from './assets/door_imgs/traditional/Stamped_Shaker.jpg';
-import RecessedPanel from  './assets/door_imgs/traditional/Recessed_Panel.jpg';
+import RaisedPanel from '../assets/door_imgs/traditional/Raised_Panel.jpg';
+import StampedCarriage from '../assets/door_imgs/traditional/Stamped_Carriage_House.jpg';
+import StampedShaker from '../assets/door_imgs/traditional/Stamped_Shaker.jpg';
+import RecessedPanel from '../assets/door_imgs/traditional/Recessed_Panel.jpg';
 
 /*Traditional Designs*/
-import shortPanelRaised from './assets/Designs/traditional/Raised_Panel_Short.jpg'
-import longPanelRaised from './assets/Designs/traditional/Raised_Panel_Long.jpg'
-import shortPanelStamped from './assets/Designs/traditional/Stamped_Carriage_Short.jpg'
-import longPanelStamped from './assets/Designs/traditional/Stamped_Carriage_Long.jpg'
-import stampedShakerDesign from './assets/Designs/traditional/Stamped_Shaker.jpg'
-import flush from './assets/Designs/contemporary/Flush.jpg'
+import shortPanelRaised from '../assets/Designs/traditional/Raised_Panel_Short.jpg';
+import longPanelRaised from '../assets/Designs/traditional/Raised_Panel_Long.jpg';
+import shortPanelStamped from '../assets/Designs/traditional/Stamped_Carriage_Short.jpg';
+import longPanelStamped from '../assets/Designs/traditional/Stamped_Carriage_Long.jpg';
+import stampedShakerDesign from '../assets/Designs/traditional/Stamped_Shaker.jpg';
+import flush from '../assets/Designs/contemporary/Flush.jpg';
 
 /*Contemporary Doors*/
-import Sterling  from './assets/door_imgs/contemporary/Sterling.jpg'
-import Planks from './assets/door_imgs/contemporary/Planks.jpg'
-import SkylineFlush from './assets/door_imgs/contemporary/Flush.jpg'
-import Aluminum from './assets/door_imgs/contemporary/Aluminum.jpg'
+import Sterling from '../assets/door_imgs/contemporary/Sterling.jpg';
+import Planks from '../assets/door_imgs/contemporary/Planks.jpg';
+import SkylineFlush from '../assets/door_imgs/contemporary/Flush.jpg';
+import Aluminum from '../assets/door_imgs/contemporary/Aluminum.jpg';
 
 /*Contemporary Designs*/
-import shortWindows from './assets/Designs/contemporary/No_Or_Short_Windows.jpg'
-import longWindows from './assets/Designs/contemporary/Long_Windows.jpg'
-import overSizedWindows from './assets/Designs/contemporary/Oversized_Windows.jpg'
-import fullView from './assets/Designs/contemporary/Full_View_Aluminum.jpg'
+import shortWindows from '../assets/Designs/contemporary/No_Or_Short_Windows.jpg';
+import longWindows from '../assets/Designs/contemporary/Long_Windows.jpg';
+import overSizedWindows from '../assets/Designs/contemporary/Oversized_Windows.jpg';
+import fullView from '../assets/Designs/contemporary/Full_View_Aluminum.jpg';
 
-/*Carriage Doors */
-import Shoreline from './assets/door_imgs/carriage/Shoreline.jpg'
-import carriageSteel from  './assets/door_imgs/carriage/Steel Overlay.jpg'
+/*Carriage Doors*/
+import Shoreline from '../assets/door_imgs/carriage/Shoreline.jpg';
+import carriageSteel from '../assets/door_imgs/carriage/Steel Overlay.jpg';
 
 /*Carriage Designs*/
-import ten from './assets/Designs/carriage/10.jpg'
-import tenA from './assets/Designs/carriage/10A.jpg'
-import eleven from './assets/Designs/carriage/11.jpg'
-import elevenA from './assets/Designs/carriage/11A.jpg'
-import twelve from './assets/Designs/carriage/12.jpg'
-import twelveA from './assets/Designs/carriage/12A.jpg'
-import thirtyThree from './assets/Designs/carriage/33.jpg'
-import thirtyThreeA from './assets/Designs/carriage/33A.jpg'
+import ten from '../assets/Designs/carriage/10.jpg';
+import tenA from '../assets/Designs/carriage/10A.jpg';
+import eleven from '../assets/Designs/carriage/11.jpg';
+import elevenA from '../assets/Designs/carriage/11A.jpg';
+import twelve from '../assets/Designs/carriage/12.jpg';
+import twelveA from '../assets/Designs/carriage/12A.jpg';
+import thirtyThree from '../assets/Designs/carriage/33.jpg';
+import thirtyThreeA from '../assets/Designs/carriage/33A.jpg';
 
 /*Wood Types*/
-import cedar from './assets/Colors/woods/accents-cedar.jpg';
-import carbon from './assets/Colors/woods/accents-carbonOak.jpg';
-import natural from './assets/Colors/woods/accents-naturalOak.jpg';
-import darkOak from './assets/Colors/woods/accents-darkOak.jpg';
-import mahogany from './assets/Colors/woods/accents-mahogany.jpg';
-import driftwood from './assets/Colors/woods/accents-driftwood.jpg';
-import walnut from './assets/Colors/woods/accents-walnut.jpg';
-import modernWoodGrain from'./assets/Colors/traditional_colors/Modern_Woodgrain.jpg'
-import classicWoodGrain from'./assets/Colors/traditional_colors/Classic_Woodgrain.jpg'
+import cedar from '../assets/Colors/woods/accents-cedar.jpg';
+import carbon from '../assets/Colors/woods/accents-carbonOak.jpg';
+import natural from '../assets/Colors/woods/accents-naturalOak.jpg';
+import darkOak from '../assets/Colors/woods/accents-darkOak.jpg';
+import mahogany from '../assets/Colors/woods/accents-mahogany.jpg';
+import driftwood from '../assets/Colors/woods/accents-driftwood.jpg';
+import walnut from '../assets/Colors/woods/accents-walnut.jpg';
+import modernWoodGrain from '../assets/Colors/traditional_colors/Modern_Woodgrain.jpg';
+import classicWoodGrain from '../assets/Colors/traditional_colors/Classic_Woodgrain.jpg';
 
 /*Window Position*/
-import top from './assets/window_position/1st.jpg'
-import topTwo from './assets/window_position/1st.jpg'
-import topRow from './assets/window_position/2_top_rows.jpg'
-import full from './assets/window_position/full.jpg'
-import right from './assets/window_position/right.jpg'
-import left from './assets/window_position/left.jpg'
+import top from '../assets/window_position/1st.jpg';
+import topTwo from '../assets/window_position/1st.jpg';
+import topRow from '../assets/window_position/2_top_rows.jpg';
+import full from '../assets/window_position/full.jpg';
+import right from '../assets/window_position/right.jpg';
+import left from '../assets/window_position/left.jpg';
 
 /*Glass*/
-import plain from './assets/Glass/Thumb_Plain.jpg'
-import tinted from './assets/Glass/Thumb_Tinted.jpg'
-import obscure from './assets/Glass/Thumb_Obscure.jpg'
-import frosted from './assets/Glass/Thumb_Frosted.jpg'
-import glueChips from './assets/Glass/Thumb_GlueChips.jpg'
-import seeded from './assets/Glass/Thumb_Seeded.jpg'
+import plain from '../assets/Glass/Thumb_Plain.jpg';
+import tinted from '../assets/Glass/Thumb_Tinted.jpg';
+import obscure from '../assets/Glass/Thumb_Obscure.jpg';
+import frosted from '../assets/Glass/Thumb_Frosted.jpg';
+import glueChips from '../assets/Glass/Thumb_GlueChips.jpg';
+import seeded from '../assets/Glass/Thumb_Seeded.jpg';
 
 /*Stylelite*/
-import litePlain from './assets/Stylelite/plain.png'
-import liteTinted from './assets/Stylelite/tinted.png'
-import liteFrosted from './assets/Stylelite/frosted.png'
-import liteRain from './assets/Stylelite/rain.png'
+import litePlain from '../assets/Stylelite/plain.png';
+import liteTinted from '../assets/Stylelite/tinted.png';
+import liteFrosted from '../assets/Stylelite/frosted.png';
+import liteRain from '../assets/Stylelite/rain.png';
 
 /*Designer Glass*/
-import raisedTemple from './assets/Designer_Glass/short_Temple.png'
-import raisedNewPort from './assets/Designer_Glass/short_Newport.png'
-import raisedSomsertSetBrass from './assets/Designer_Glass/short_somerset_brass.jpg'
-import raisedSomsertSetPlat from './assets/Designer_Glass/short_somerset_platinum.jpg'
-import raisedHawthorneBrass from './assets/Designer_Glass/short_hawthorne_brass.jpg'
-import raisedHawthornePlat from './assets/Designer_Glass/short_hawthorne_platinum.jpg'
-import carriageTemple from './assets/Designer_Glass/Long_Temple.png'
-import carriageNewport from './assets/Designer_Glass/Long_Newport.png'
-import carriageFlorence from './assets/Designer_Glass/Long_Florence.png'
+import raisedTemple from '../assets/Designer_Glass/short_Temple.png';
+import raisedNewPort from '../assets/Designer_Glass/short_Newport.png';
+import raisedSomsertSetBrass from '../assets/Designer_Glass/short_somerset_brass.jpg';
+import raisedSomsertSetPlat from '../assets/Designer_Glass/short_somerset_platinum.jpg';
+import raisedHawthorneBrass from '../assets/Designer_Glass/short_hawthorne_brass.jpg';
+import raisedHawthornePlat from '../assets/Designer_Glass/short_hawthorne_platinum.jpg';
+import carriageTemple from '../assets/Designer_Glass/Long_Temple.png';
+import carriageNewport from '../assets/Designer_Glass/Long_Newport.png';
+import carriageFlorence from '../assets/Designer_Glass/Long_Florence.png';
 
 /*Glass Inserts*/
-import noInserts from './assets/Inserts/no-insert-long.jpg'
-import prarire from './assets/Inserts/prairie-long.jpg'
-import sherwood from './assets/Inserts/sherwood-long.jpg'
-import stockton from './assets/Inserts/stockton-long.jpg'
-import sunburst from './assets/Inserts/sunburst-long.jpg'
-import waterton from './assets/Inserts/waterton-long.jpg'
-import madison from './assets/Inserts/madison-long.jpg'
-import cascade from './assets/Inserts/cascade-long.jpg'
-import cathedral from './assets/Inserts/cathedral-short.jpg'
+import noInserts from '../assets/Inserts/no-insert-long.jpg';
+import prarire from '../assets/Inserts/prairie-long.jpg';
+import sherwood from '../assets/Inserts/sherwood-long.jpg';
+import stockton from '../assets/Inserts/stockton-long.jpg';
+import sunburst from '../assets/Inserts/sunburst-long.jpg';
+import waterton from '../assets/Inserts/waterton-long.jpg';
+import madison from '../assets/Inserts/madison-long.jpg';
+import cascade from '../assets/Inserts/cascade-long.jpg';
+import cathedral from '../assets/Inserts/cathedral-short.jpg';
 
 /*Insulation */
-import standardInsulation from  './assets/Insulation/traditional/raised/standard/2250_shortPanel.jpg'
-import premiumInsulation from  './assets/Insulation/traditional/raised/premium/2283_shortPanel.jpg'
-
-import standardRaisedPanel from './assets/Insulation/traditional/raised/standard/2250_shortPanel.jpg' 
-import premiumRaisedPanel from './assets/Insulation/traditional/raised/premium/2283_shortPanel.jpg' 
-import standardStampedCarriage from './assets/Insulation/traditional/stampedCarriage/standard/5250_shortCarriage.jpg' 
-import premiumStampedCarriage  from './assets/Insulation/traditional/stampedCarriage/premium/5283_shortCarriage.jpg'
-import standardStampedShaker from './assets/Insulation/traditional/stampedShaker/standard/2550_stampedShaker.jpg'
-import premiumStampedShaker from './assets/Insulation/traditional/stampedShaker/premium/2583_stampedShaker.jpg'
-import premiumRecessed from './assets/Insulation/traditional/recessed/premium/2298_recessedShort.jpg'
-import premiumShoreline from './assets/Insulation/traditional/recessed/premium/2298_recessedShort.jpg'
-
-import premiumSterling from './assets/Insulation/contemporary/sterling/2783_sterling.jpg'
-import standardPlank from  './assets/Insulation/traditional/raised/standard/2250_shortPanel.jpg'
-import premiumPlank from  './assets/Insulation/contemporary/planks/premium/2328_short.jpg'
-import aluminumStandard from'./assets/Insulation/contemporary/aluminum/3295R_standard.jpg'
-import aluminumPremium from'./assets/Insulation/contemporary/aluminum/3297R_premium.jpg'
-import carriageSteelStandard from'./assets/Insulation/carriage/5300_standard.jpg'
-import carriageSteelPremium from'./assets/Insulation/carriage/5600_premium.jpg'
+import standardInsulation from '../assets/Insulation/traditional/raised/standard/2250_shortPanel.jpg';
+import premiumInsulation from '../assets/Insulation/traditional/raised/premium/2283_shortPanel.jpg';
+import standardRaisedPanel from '../assets/Insulation/traditional/raised/standard/2250_shortPanel.jpg';
+import premiumRaisedPanel from '../assets/Insulation/traditional/raised/premium/2283_shortPanel.jpg';
+import standardStampedCarriage from '../assets/Insulation/traditional/stampedCarriage/standard/5250_shortCarriage.jpg';
+import premiumStampedCarriage from '../assets/Insulation/traditional/stampedCarriage/premium/5283_shortCarriage.jpg';
+import standardStampedShaker from '../assets/Insulation/traditional/stampedShaker/standard/2550_stampedShaker.jpg';
+import premiumStampedShaker from '../assets/Insulation/traditional/stampedShaker/premium/2583_stampedShaker.jpg';
+import premiumRecessed from '../assets/Insulation/traditional/recessed/premium/2298_recessedShort.jpg';
+import premiumShoreline from '../assets/Insulation/traditional/recessed/premium/2298_recessedShort.jpg';
+import premiumSterling from '../assets/Insulation/contemporary/sterling/2783_sterling.jpg';
+import standardPlank from '../assets/Insulation/traditional/raised/standard/2250_shortPanel.jpg';
+import premiumPlank from '../assets/Insulation/contemporary/planks/premium/2328_short.jpg';
+import aluminumStandard from '../assets/Insulation/contemporary/aluminum/3295R_standard.jpg';
+import aluminumPremium from '../assets/Insulation/contemporary/aluminum/3297R_premium.jpg';
+import carriageSteelStandard from '../assets/Insulation/carriage/5300_standard.jpg';
+import carriageSteelPremium from '../assets/Insulation/carriage/5600_premium.jpg';
 
 let commonSolidColors = {White:"#EAEEED",Sandstone:"#9E9188",Almond:"#D5CBBF",Brown:"#4D3B37",Bronze:"#6E6D69",Gray:"#9C9DA1","Desert Tan":"#CBC4B1","Black":"#242625","Graphite":"#46494E"}
 let commonInserts = {"No Inserts": noInserts,Prairie: prarire,Sherwood: sherwood, Stockton: stockton,Sunburst: sunburst,Waterton: waterton,Cathedral: cathedral,Cascade: cascade}

@@ -1,6 +1,6 @@
 import { useState, useEffect,useRef} from 'react'
 import { Routes, Route, Link,useLocation,useNavigate} from 'react-router-dom';
-import './css/index.css'
+import '../css/index.css'
 
 export default function SubmittedDoor({doorName,email,phone,location}) {
   const navigate = useNavigate();

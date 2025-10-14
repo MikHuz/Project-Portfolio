@@ -1,6 +1,6 @@
 import { useState, useEffect,useRef} from 'react'
 import { Routes, Route, Link,useNavigate} from 'react-router-dom';
-import './css/DoorSelector.css'
+import '../css/DoorSelector.css'
 import Build from './Build.jsx'
 
 function SlideShow({ handleCarouselClick, subTypeImgs,index,doorNavName,doorName,doorType}) {

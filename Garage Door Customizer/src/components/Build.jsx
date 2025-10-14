@@ -1,12 +1,12 @@
 import { useState, useEffect,useRef} from 'react'
 import { Routes, Route, Link,useLocation,useNavigate,useParams} from 'react-router-dom';
-import './css/Build.css'
-import './css/index.css'
+import '../css/Build.css'
+import '../css/index.css'
 import DoorSelector from "./DoorSelector.jsx";
 import doorgiLogo from '/logo.png'
-import RaisedPanel from './assets/door_imgs/traditional/Raised_Panel.jpg';
-import shortSize from './assets/door_imgs/traditional/ShortPanel.jpg'
-import doubleSize from './assets/door_imgs/traditional/LongPanel.jpg'
+import RaisedPanel from '../assets/door_imgs/traditional/Raised_Panel.jpg';
+import shortSize from '../assets/door_imgs/traditional/ShortPanel.jpg'
+import doubleSize from '../assets/door_imgs/traditional/LongPanel.jpg'
 const lorem="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 function Colors(props) {
@@ -899,7 +899,7 @@ export default function Build(props) {
         <button className="back-btn" >Back</button>
       </Link>
       <button className="reset-btn" onClick={handleReset}>Reset</button>
-      <button className={`continue-btn ${doorValid ? "" : "disabled-bt"}`} disabled={!doorValid} onClick={handleContinue}>Continue</button>
+      <button className={`continue-btn ${doorValid ? "" : "disabled-bt"}`} disabled={!doorValid} onClick={handleContinue}>Submit Request</button>
     </div> </>
 
   return (
