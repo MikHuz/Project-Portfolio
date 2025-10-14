@@ -44,6 +44,10 @@ Rendering is performed using **rasterization** rather than ray tracing for effic
 ### 🕹️ Solar System Overview
 ![Solar System Overview](./Controls%20in%20Action.gif)
 
+### 📹 Full Simulation Video
+A longer walkthrough of the **solar system simulation** is available in the repository:  
+  `Solar System Demo.mp4`
+
 ---
 
 ## ⚙️ Notes
