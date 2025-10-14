@@ -49,7 +49,12 @@ Follow the steps below to run the project locally.
 ### 4️⃣ Run the Vite Development Server
       Type in npm run dev. Open your browser to http://localhost:5173 (default Vite port) to explore the app.
 
-## 📹 Demo
+## 📹 Demo  
 
-## A preview of the full reservation flow is available in the repository:
-      🎬 /Little Lemon App Demo.mp4
+###  🎬Application Walkthrough  
+      A walkthrough of the full reservation flow is available in the repository: 
+      /Little Lemon App Demo.mp4
+
+### 🎨 Figma Prototype  
+      The original design and interactive prototype are also available in the repository: 
+      /Little Lemon Layout.fig
