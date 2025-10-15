@@ -32,7 +32,7 @@ function SlideShow(props){ /*Slideshow for each doorType carousel*/
   }
   let doorElements = props.doorImgs.map((imgSrc, i) => (
     <div id="homeItemSlide" className={`carousel-item ${i === 0 ? 'active' : ''} `} key={i}>
-      <img src={imgSrc} onClick={handleCarouselClick}className="d-block w-100" alt={`Garage door ${i + 1}`} />
+      <img src={imgSrc} onClick={handleCarouselClick} className="d-block w-100" alt={`Garage door ${i + 1}`} />
       {/*<div class="carousel-caption" style={{bottom:"0px"}}>
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
@@ -93,7 +93,7 @@ function PersistentState(key, door){
   return item ? JSON.parse(item) : null; // fallback
 }
 
-function BuildWrapper({ doorData }) {
+function BuildWrapper({ doorData ,setWaitForAPI}) {
   let { type, doorName} = useParams();
   type = type.toLowerCase()
   doorName = doorName.toLowerCase().replace(/[_\-.]/g, " ");
@@ -125,7 +125,7 @@ function BuildWrapper({ doorData }) {
       );
   }
 
-  return <Build selectedDoor={door} doorType={type} />;
+  return <Build selectedDoor={door} doorType={type}  setWaitForAPI={setWaitForAPI}/>;
 }
 
 function App() {/*Route generations and door generation*/
@@ -134,6 +134,7 @@ function App() {/*Route generations and door generation*/
   const [deviceType, setDeviceType] = useState(getDeviceType(window.innerWidth));
   const [isDataReady, setIsDataReady] = useState(false);
   const [doorData, setDoorData] = useState(null)
+  const [waitforAPI,setWaitForAPI] = useState(false)
   const location = useLocation();
   //console.log("SELECTED DOOR:",selectedDoor)
   //console.log("FULL DOOR DATA:",doorData)F
@@ -226,16 +227,48 @@ function App() {/*Route generations and door generation*/
     }
   }
   generatedRoutes.push(
-    <Route path={`:type/:doorName/build`} /*Route for doorType/doorName/any preselected options*/
-    element={<BuildWrapper doorData={doorData} />}
+    <Route path={`:type/:doorName/build`} /*Standard user navigation route*/
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
     />
   );
 
+  /*Routes for doorType/doorName/any preselected options*/ 
   generatedRoutes.push(
-    <Route path={`:type/:doorName/build/:size/:design/:color`} /*Route for doorType/doorName/any preselected options*/
-    element={<BuildWrapper doorData={doorData} />}
+    <Route path={`:type/:doorName/build/:size`} 
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
     />
   );
+  generatedRoutes.push(
+    <Route path={`:type/:doorName/build/:size/:design`} 
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
+    />
+  );
+  generatedRoutes.push(
+    <Route path={`:type/:doorName/build/:size/:design/:insType`}
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
+    />
+  );
+  generatedRoutes.push(
+    <Route path={`:type/:doorName/build/:size/:design/:insType/:colorType/:color`} /*Route for doorType/doorName/any preselected options*/
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
+    />
+  );
+  generatedRoutes.push(
+    <Route path={`:type/:doorName/build/:size/:design/:insType/:colorType/:color/:glassType/:glass`} /*Route for doorType/doorName/any preselected options*/
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
+    />
+  );
+  generatedRoutes.push(
+    <Route path={`:type/:doorName/build/:size/:design/:insType/:colorType/:color/:glassType/:glass/:inserts`} /*Route for doorType/doorName/any preselected options*/
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
+    />
+  );
+  generatedRoutes.push(
+    <Route path={`:type/:doorName/build/:size/:design/:insType/:colorType/:color/:glassType/:glass/:inserts/:position`} /*Route for doorType/doorName/any preselected options*/
+    element={<BuildWrapper doorData={doorData} setWaitForAPI={setWaitForAPI}/>}
+    />
+  );
+
 
   }
   //console.log("ROUTES:", routePaths)
@@ -251,7 +284,7 @@ function App() {/*Route generations and door generation*/
       {generatedRoutes}
     </Routes>
     :
-    isDataReady ?
+    isDataReady && !waitforAPI ?
     <Routes>
       <Route path="/" element={<HomePage />} />
        <Route path="/submittedDoor" element={<SubmittedDoor 
@@ -261,7 +294,7 @@ function App() {/*Route generations and door generation*/
     </Routes>
     :
     <div id ="loading-page">
-      <img src={doorgiLogo} className="loading-style"/>
+      <img src={doorgiLogo} className="page-loading-style"/>
       <h1 className="wave">
       <span>L</span><span>o</span><span>a</span><span>d</span>
       <span>i</span><span>n</span><span>g</span>

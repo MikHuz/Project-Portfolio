@@ -2,58 +2,60 @@ const text = `
 Collection,ID,Name,Design,Build,Size,Model,Base Price,Solid Color,Woodtone,Glass,Plain,Obscure,Tinted,Frosted,Inserts,StyleLite,D.Glass
 Traditional,1,Raised Panel,Short Panel,Non-insulated,Single,2250,500,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
 Traditional,2,Raised Panel,Short Panel,Non-insulated,Double,2250,1000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
-Traditional,3,Raised Panel,Short Panel,Insulated,Single,2283,1000,Yes,400,Yes,250,300,350,400,100,150,NA
-Traditional,4,Raised Panel,Short Panel,Insulated,Double,2283,1500,Yes,800,Yes,500,600,700,800,200,300,NA
-Traditional,5,Raised Panel,Long Panel,Non-insulated,Single,4250,500,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
-Traditional,6,Raised Panel,Long Panel,Non-insulated,Double,4250,1000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
-Traditional,7,Raised Panel,Long Panel,Insulated,Single,4283,1000,Yes,400,Yes,250,300,350,400,100,150,NA
-Traditional,8,Raised Panel,Long Panel,Insulated,Double,4283,1500,Yes,800,Yes,500,600,700,800,200,300,NA
+Traditional,3,Raised Panel,Short Panel,Insulated,Single,2283,1001,Yes,400,Yes,250,300,350,400,100,150,NA
+Traditional,4,Raised Panel,Short Panel,Insulated,Double,2283,1501,Yes,800,Yes,500,600,700,800,200,300,NA
+Traditional,5,Raised Panel,Long Panel,Non-insulated,Single,4250,502,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Traditional,6,Raised Panel,Long Panel,Non-insulated,Double,4250,1002,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Traditional,7,Raised Panel,Long Panel,Insulated,Single,4283,1003,Yes,400,Yes,250,300,350,400,100,150,NA
+Traditional,8,Raised Panel,Long Panel,Insulated,Double,4283,1503,Yes,800,Yes,500,600,700,800,200,300,NA
 ,,,,,,,,,,,,,,,,,
-Traditional,9,Stamped Carriage,Short Panel,Non-insulated,Single,5250,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,10,Stamped Carriage,Short Panel,Non-insulated,Double,5250,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,11,Stamped Carriage,Short Panel,Insulated,Single,5283,???,Yes,???,Yes,???,???,???,???,???,NA,NA
-Traditional,12,Stamped Carriage,Short Panel,Insulated,Doube,5283,???,Yes,???,Yes,???,???,???,???,???,NA,NA
-Traditional,13,Stamped Carriage,Long Panel,Non-insulated,Single,5950,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,14,Stamped Carriage,Long Panel,Non-insulated,Double,5950,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,15,Stamped Carriage,Long Panel,Insulated,Single,5983,???,Yes,???,Yes,???,???,???,???,???,NA,NA
-Traditional,16,Stamped Carriage,Long Panel,Insulated,Double,5983,???,Yes,???,Yes,???,???,???,???,???,NA,NA
+Traditional,9,Stamped Carriage,Short Panel,Non-insulated,Single,5250,500,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Traditional,10,Stamped Carriage,Short Panel,Non-insulated,Double,5250,1000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Traditional,11,Stamped Carriage,Short Panel,Insulated,Single,5283,1001,Yes,400,Yes,250,300,350,400,100,150,NA
+Traditional,12,Stamped Carriage,Short Panel,Insulated,Double,5283,1501,Yes,800,Yes,500,600,700,800,200,300,NA
+Traditional,13,Stamped Carriage,Long Panel,Non-insulated,Single,5950,502,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Traditional,14,Stamped Carriage,Long Panel,Non-insulated,Double,5950,1002,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Traditional,15,Stamped Carriage,Long Panel,Insulated,Single,5983,1003,Yes,400,Yes,250,300,350,400,100,150,NA
+Traditional,16,Stamped Carriage,Long Panel,Insulated,Double,5983,1503,Yes,800,Yes,500,600,700,800,200,300,NA
 ,,,,,,,,,,,,,,,,,
-Traditional,17,Stamped Shaker,Shaker,Non-insulated,Single,2550,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,18,Stamped Shaker,Shaker,Non-insulated,Double,2550,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,19,Stamped Shaker,Shaker,Insulated,Single,2583,???,Yes,???,Yes,???,???,???,???,???,NA,NA
-Traditional,20,Stamped Shaker,Shaker,Insulated,Double,2583,???,Yes,???,Yes,???,???,???,???,???,NA,NA
+Traditional,17,Stamped Shaker,Shaker,Non-insulated,Single,2550,500,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Traditional,18,Stamped Shaker,Shaker,Non-insulated,Double,2550,1000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Traditional,19,Stamped Shaker,Shaker,Insulated,Single,2583,501,Yes,400,Yes,250,300,350,400,100,150,NA
+Traditional,20,Stamped Shaker,Shaker,Insulated,Double,2583,1501,Yes,800,Yes,500,600,700,800,200,300,NA
 ,,,,,,,,,,,,,,,,,
-Traditional,21,Recessed Panel,Short Panel,Insulated,Single,2298,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,22,Recessed Panel,Short Panel,Insulated,Double,2298,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,23,Recessed Panel,Long Panel,Insulated,Single,2294,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,24,Recessed Panel,Long Panel,Insulated,Double,2248,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,25,Recessed Panel,Flush,Insulated,Single,2291,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
-Traditional,26,Recessed Panel,Flush,Insulated,Double,2291,???,Yes,NA,Yes,???,???,???,???,???,NA,NA
+Traditional,21,Recessed Panel,Short Panel,Insulated,Single,2298,1000,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Traditional,22,Recessed Panel,Short Panel,Insulated,Double,2298,2000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Traditional,23,Recessed Panel,Long Panel,Insulated,Single,2294,1001,Yes,NA,Yes,250,300,350,400,100,150,NA
+Traditional,24,Recessed Panel,Long Panel,Insulated,Double,2248,2001,Yes,NA,Yes,500,600,700,800,200,300,NA
+Traditional,25,Recessed Panel,Flush,Insulated,Single,2291,1002,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Traditional,26,Recessed Panel,Flush,Insulated,Double,2291,2002,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
 ,,,,,,,,,,,,,,,,,
 Contemporary,27,Planks,Short Windows,Insulated,Single,2327,1000,Yes,400,Yes,250,300,350,400,100,NA,NA
-Contemporary,,Planks,Short Windows,Insulated,Double,2327,1000,Yes,400,Yes,250,300,350,400,100,NA,NA
-Contemporary,,Planks,Long Windows,Insulated,Single,2347,1500,Yes,800,Yes,500,600,700,800,200,300,NA
-Contemporary,,Planks,Long Windows,Insulated,Double,2347,1500,Yes,800,Yes,500,600,700,800,200,300,NA
+Contemporary,,Planks,Short Windows,Insulated,Double,2327,2000,Yes,800,Yes,250,300,350,400,100,NA,NA
+Contemporary,,Planks,Long Windows,Insulated,Single,2347,1001,Yes,400,Yes,500,600,700,800,200,300,NA
+Contemporary,,Planks,Long Windows,Insulated,Double,2347,2001,Yes,800,Yes,500,600,700,800,200,300,NA
 ,,,,,,,,,,,,,,,,,
-Contemporary,,Skyline Flush,Short Windows,Non-insulated,Single,2150,500,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
-Contemporary,,Skyline Flush,Short Windows,Non-insulated,Double,2150,1000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
-Contemporary,,Skyline Flush,Short Windows,Insulated,Single,2127,1000,Yes,400,Yes,250,300,350,400,100,150,NA
-Contemporary,,Skyline Flush,Short Windows,Insulated,Double,2127,1500,Yes,800,Yes,500,600,700,800,200,300,NA
-Contemporary,,Skyline Flush,Long Windows,Non-insulated,Single,4150,500,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
-Contemporary,,Skyline Flush,Long Windows,Non-insulated,Double,4150,1000,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
-Contemporary,,Skyline Flush,Long Windows,Insulated,Single,2147,1000,Yes,400,Yes,250,300,350,400,100,150,NA
-Contemporary,,Skyline Flush,Long Windows,Insulated,Double,2147,1500,Yes,800,Yes,500,600,700,800,200,300,NA
+Contemporary,,Skyline Flush,Short Windows,Non-insulated,Single,2150,501,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Contemporary,,Skyline Flush,Short Windows,Non-insulated,Double,2150,1001,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Contemporary,,Skyline Flush,Short Windows,Insulated,Single,2127,1002,Yes,400,Yes,250,300,350,400,100,150,NA
+Contemporary,,Skyline Flush,Short Windows,Insulated,Double,2127,1502,Yes,800,Yes,500,600,700,800,200,300,NA
+Contemporary,,Skyline Flush,Long Windows,Non-insulated,Single,4150,503,Yes,NA,Yes,200,250,NA,NA,100,NA,NA
+Contemporary,,Skyline Flush,Long Windows,Non-insulated,Double,4150,1003,Yes,NA,Yes,400,500,NA,NA,200,NA,NA
+Contemporary,,Skyline Flush,Long Windows,Insulated,Single,2147,1004,Yes,400,Yes,250,300,350,400,100,150,NA
+Contemporary,,Skyline Flush,Long Windows,Insulated,Double,2147,1504,Yes,800,Yes,500,600,700,800,200,300,NA
 ,,,,,,,,,,,,,,,,,
-Contemporary,,Aluminum,Full-View,Non-insulated,Single,3295R,???,Yes,NA,$???,NA,NA,NA,NA,NA,NA,NA
-Contemporary,,Aluminum,Full-View,Non-insulated,Double,3295R,???,Yes,NA,$???,NA,NA,NA,NA,NA,NA,NA
-Contemporary,,Aluminum,Full-View,Insulated,Single,3295R,???,Yes,NA,$???,NA,NA,NA,NA,NA,NA,NA
-Contemporary,,Aluminum,Full-View,Insulated,Double,3297R,???,Yes,NA,$???,NA,NA,NA,NA,NA,NA,NA
+Contemporary,,Aluminum,Full-View,Non-insulated,Single,3295R,???,Yes,NA,$???,200,250,NA,NA,100,NA,NA
+Contemporary,,Aluminum,Full-View,Non-insulated,Double,3295R,???,Yes,NA,$???,400,500,NA,NA,200,NA,NA
+Contemporary,,Aluminum,Full-View,Insulated,Single,3297R,???,Yes,NA,$???,250,300,350,400,100,150,NA
+Contemporary,,Aluminum,Full-View,Insulated,Double,3297R,???,Yes,NA,$???,500,600,700,800,200,300,NA
 ,,,,,,,,,,,,,,,,,
-Contemporary,,Sterling,Flush,Insulated,Single,2783,???,Yes,NA,$???,NA,NA,NA,NA,NA,NA,NA
-Contemporary,,Sterling,Flush,Insulated,Double,2783,???,Yes,NA,$???,NA,NA,NA,NA,NA,NA,NA
+Contemporary,,Sterling,Flush,Insulated,Single,2783,???,Yes,NA,$???,200,250,NA,NA,100,NA,NA
+Contemporary,,Sterling,Flush,Insulated,Double,2783,???,Yes,NA,$???,400,500,NA,NA,200,NA,NA
 ,,,,,,,,,,,,,,,,,
-Carriage,,Steel Overlay,All Designs???,Insulated,Single,5300,???,Yes,NA,???,???,???,???,???,???,NA,NA
-Carriage,,Steel Overlay,All Designs???,Insulated,Double,5300,???,Yes,NA,???,???,???,???,???,???,NA,NA
+Carriage,,Steel Overlay,Any Design,Non-insulated,Single,5300,2000,Yes,NA,NA,???,???,???,???,???,NA,NA
+Carriage,,Steel Overlay,Any Design,Non-insulated,Double,5300,4000,Yes,NA,NA,???,???,???,???,???,NA,NA
+Carriage,,Steel Overlay,Any Design,Insulated,Single,5600,3000,Yes,NA,NA,???,???,???,???,???,NA,NA
+Carriage,,Steel Overlay,Any Design,Insulated,Double,5600,6000,Yes,NA,NA,???,???,???,???,???,NA,NA
 ,,,,,,,,,,,,,,,,,
 Carriage,,Fiber Glass Overlay,All Designs???,Insulated,Single,5300,???,Yes,NA,???,???,???,???,???,???,NA,NA
 Carriage,,Fiber Glass Overlay,All Designs???,Insulated,Double,5300,???,Yes,NA,???,???,???,???,???,???,NA,NA
@@ -507,29 +509,34 @@ let Doors = {
     }
   }
 }//These doors and common items are a mock, do not contain images or urls//
-  let prices = {};
-  const rows = text.trim().split("\n");
-  const headers = rows[0].replace("\r", "").split(",");
 
+
+ //alert("inside doors")
+ // const res = await fetch('/test-deployment/dist/doorPrices.csv');
+  //const text = await res.text();
+  const rows = text.trim().split("\n");
+  //const rows = stringText.trim().split("\n");
+  const headers = rows[0].replace("\r", "").split(",");
+  let prices = {};
+  let i =2;
   rows.slice(1).forEach((row) => {
     const values = row.replace("\r", "").split(",");
     if (values.every(v => v.trim() === "")){
       return; // Skip rows where all values are empty
     }
-
+    //console.log(JSON.stringify(values));
     const entries = {};
     headers.forEach((header, idx) => entries[header] = values[idx]);
-    for (let key in entries){
+      for (let key in entries){
       if (entries[key]=="NA" || entries[key]=="???" || entries[key]==="$???") entries[key] = null;
     }
     let { Collection, Name, Design, Build, Size, Model, "Base Price": basePrice, "Solid Color":solidColor, Woodtone, 
           Glass,Tinted, Plain, Obscure, Frosted, Seeded, glueChips,Inserts,StyleLite,"D.Glass": designerGlass } = entries;
+    
     Name = (Name =="Stamped Carriage") ? "Stamped Carriage House" : Name
+    console.log(i)
     if (Collection=="Carriage"){
-      console.log("Here")
-    }
-    if (Name!= "Raised Panel"){
-       console.log("Here")
+      console.log("Carriage Here")
     }
     prices[Collection] ||= {};
     prices[Collection][Name] ||= {};
@@ -584,33 +591,43 @@ let Doors = {
     const doorID = Name.replace(" ", "")+ " " + Design.replace(" ", "") + " "  + Ins + " "+ Size
     const doorType = Collection.charAt(0).toLowerCase() + Collection.slice(1)
     //console.log("ID:",doorID)
+    console.log(i)
     if (opts["Accents Woodtones"]){Doors[doorType][Name].woods[doorID] = "common"}
     if (opts["Solid Color"]){  Doors[doorType][Name].colors[doorID] ="common"}
    
     if (Collection=="Traditional" && !opts["Accents Woodtones"] && opts["Solid Color"]){
-      console.log("ADDING modern woods")
-       Doors[doorType][Name].colors[doorID] = {...commonSolidColors, "Modern Woodgrain":"url","Classic Woodgrain":"url"}
+        //console.log("ADDING modern woods")
+       Doors[doorType][Name].colors[doorID] = {...commonSolidColors, "Modern Woodgrain":"irl moograin","Classic Woodgrain":"url class grain"}
     }
     else if (Collection=="Traditional" && opts["Accents Woodtones"]  && !opts["Solid Color"]){
-        console.log("ADDING common colors")
+      //console.log("ADDING common colors")
       Doors[doorType][Name].woods[doorID] = "common"
     }
     if (opts["Glass"]){
-      console.log(Collection)
+      //console.log(Collection)
       Doors[doorType][Name].windows.glass[doorID] = {}
+      let doesNotHaveNull = true
+
       glassTracker.forEach(glass =>{
         for (const glassName in glass){
-         glass[glassName] != null
-            ? Doors[doorType][Name].windows.glass[doorID][glassName] = commonGlass[glassName]
-            : Doors[doorType][Name].windows.glass[doorID][glassName]  = null
+          if (glass[glassName] != null) {
+            Doors[doorType][Name].windows.glass[doorID][glassName] = commonGlass[glassName]
+          } else{
+            Doors[doorType][Name].windows.glass[doorID][glassName]  = null;
+            doesNotHaveNull = false
+          }
         }
       })
-      if (Object.values(Doors[doorType][Name].windows.glass[doorID]).length == Object.values(commonGlass).length) {
+
+      if (doesNotHaveNull) {
         Doors[doorType][Name].windows.glass[doorID] = "common"
       }
     }
-    if (Name=="Aluminum"){
-      console.log()
+    if (Ins=="Standard" && Collection=="Carriage"){
+      console.log("standard carriage")
+    }
+    else if(Ins=="Premium" && Collection=="Carriage"){
+      console.log("here")
     }
     if (Ins=="Standard" && !(Design in Doors[doorType][Name].Insulation["Standard"]) ){
       Doors[doorType][Name].Insulation["Standard"][Design] = Model
@@ -618,12 +635,14 @@ let Doors = {
     else if (Ins=="Premium" && !(Design in Doors[doorType][Name].Insulation["Premium"]) ){
       Doors[doorType][Name].Insulation["Premium"][Design] = Model
     }
+
     if(opts["Inserts"]){
       //Doors[doorType][Name].windows.inserts = {"Any Design": {...commonInserts}}
       //Add dynamic options like with glass if needed later. Hardcoded inserts for now
     }
     //console.log(Doors[doorType])
     //console.log("\n")
+    i = i+1
 
   });
 

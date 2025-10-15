@@ -9,93 +9,6 @@ import shortSize from '../assets/door_imgs/traditional/ShortPanel.jpg'
 import doubleSize from '../assets/door_imgs/traditional/LongPanel.jpg'
 const lorem="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
-function Colors(props) {
-  const IconColor = props.IconColor
-  const doorCombo = props.doorCombination
-  const [hasWood] = useState(Object.keys(props.woods).length == 0 ? false:true)
-  const [hasColor] = useState(Object.keys(props.colors).length == 0 ? false:true)
-  const [colorType,setColorType] = useState(props.colorType)
-  // console.log("HAS COLOR?:", hasColor)
-  // console.log(colorType)
-  console.log("DOOR COMBO COLOR:",doorCombo)
-  const handleColor = (event, color, type) => {
-    console.log("Color type:",type)
-    props.handleColor(color,type);
-  };
-  let colorDivs = null
-  if(doorCombo in props.colors){
-    console.log("Has colors")
-    let correctColors = {}
-    if (props.colors[doorCombo] =="common"){
-      //console.log("common")
-      correctColors = props.commonSolidColors
-    }
-    else{
-      correctColors = props.colors[doorCombo]
-    }
-    colorDivs = Object.entries(correctColors).map(([colorName, hexCode]) => {
-      let background= {}
-      if(!hexCode.includes("#")){
-        background={ backgroundImage: `url(${hexCode})`}
-      }
-      else if (colorName.includes("with")){
-        console.log("Two toned color")
-        const [firstColor, secondColor] = hexCode.split(",");
-        background= {
-        background: `linear-gradient(to right, ${firstColor}, ${secondColor})`
-      };
-      }else{
-         background = {backgroundColor:hexCode}
-      }
-      return(
-      <div className="color-box" key={colorName}>
-        <h5>{colorName}</h5>
-        <div
-          style={background}
-          className={IconColor === colorName ? 'selected' : ''}
-          onClick={(event) => handleColor(event, colorName, "Solid Color")}
-        />
-      </div>) });
-  }
-  let woodDivs = null
-  if (doorCombo in props.woods){
-    //console.log("has woods")
-    let correctWoods = {}
-    if (props.woods[doorCombo] =="common"){
-      //console.log("common")
-      correctWoods = props.commonWoodTones
-    }
-    else{
-      correctWoods = props.woods[doorCombo]
-    }
-    woodDivs = Object.entries(correctWoods).map( ([woodName,woodUrl]) => (
-      <div className="color-box" key={woodName}>
-        <h5>{woodName}</h5>
-        <div
-          style={{  backgroundImage: `url(${woodUrl})`}}
-          className={IconColor === woodName ? 'selected' : ''}
-          onClick={(event) => handleColor(event, woodName,"Accents Woodtones")}
-        />
-      </div>) )
-  }
-  //console.log(colorDivs)
-return(
-<> 
- <div id="colors-container">
-  <h2>Choose a Color</h2>
-  {colorDivs &&
-    <div >
-      <h3>Solid Colors</h3>
-      {colorDivs} 
-    </div>}
-  {woodDivs &&
-    <div>
-      <h3>Woods</h3>
-      {woodDivs} 
-    </div>}
-  </div>
-  </> )
-}
 function Designs(props){
   //console.log("INSIDE COMPONENT:",props.designs)
   const designStyle = props.designStyle
@@ -121,6 +34,7 @@ function Designs(props){
   {designDivs}
  </div>)
 }
+
 function Insulations(props){
   const { insulations, selectedInsulation, handleInsulationType } = props;
   const [openDialog, setOpenDialog] = useState(null); 
@@ -201,15 +115,107 @@ function Insulations(props){
   </div>
   )
 }
+
+function Colors(props) {
+  const IconColor = props.IconColor
+  const doorCombo = props.doorCombination
+  const [hasWood] = useState(Object.keys(props.woods).length == 0 ? false:true)
+  const [hasColor] = useState(Object.keys(props.colors).length == 0 ? false:true)
+  const [colorType,setColorType] = useState(props.colorType)
+  // console.log("HAS COLOR?:", hasColor)
+  // console.log(colorType)
+  console.log("DOOR COMBO COLOR:",doorCombo)
+  const handleColor = (event, color, type) => {
+    console.log("Color type:",type)
+    props.handleColor(color,type);
+  };
+  let colorDivs = null
+  if(doorCombo in props.colors){
+    //alert("Has colors")
+    let correctColors = {}
+    if (props.colors[doorCombo] =="common"){
+      //console.log("common")
+      correctColors = props.commonSolidColors
+    }
+    else{
+      correctColors = props.colors[doorCombo]
+    }
+    colorDivs = Object.entries(correctColors).map(([colorName, hexCode]) => {
+      let background= {}
+      if (hexCode==null){
+        return
+      }
+      if(!hexCode.includes("#")){
+        background={ backgroundImage: `url(${hexCode})`}
+      }
+      else if (colorName.includes("with")){
+        console.log("Two toned color")
+        const [firstColor, secondColor] = hexCode.split(",");
+        background= {
+        background: `linear-gradient(to right, ${firstColor}, ${secondColor})`
+      };
+      }else{
+         background = {backgroundColor:hexCode}
+      }
+      return(
+      <div className="color-box" key={colorName}>
+        <h5>{colorName}</h5>
+        <div
+          style={background}
+          className={IconColor === colorName ? 'selected' : ''}
+          onClick={(event) => handleColor(event, colorName, "Solid Color")}
+        />
+      </div>) });
+  }
+  let woodDivs = null
+  if (doorCombo in props.woods){
+    //console.log("has woods")
+    let correctWoods = {}
+    if (props.woods[doorCombo] =="common"){
+      //console.log("common")
+      correctWoods = props.commonWoodTones
+    }
+    else{
+      correctWoods = props.woods[doorCombo]
+    }
+    woodDivs = Object.entries(correctWoods).map( ([woodName,woodUrl]) => (
+      <div className="color-box" key={woodName}>
+        <h5>{woodName}</h5>
+        <div
+          style={{  backgroundImage: `url(${woodUrl})`}}
+          className={IconColor === woodName ? 'selected' : ''}
+          onClick={(event) => handleColor(event, woodName,"Accents Woodtones")}
+        />
+      </div>) )
+  }
+  //console.log(colorDivs)
+return(
+<> 
+ <div id="colors-container">
+  <h2>Choose a Color</h2>
+  {colorDivs &&
+    <div >
+      <h3>Solid Colors</h3>
+      {colorDivs} 
+    </div>}
+  {woodDivs &&
+    <div>
+      <h3>Woods</h3>
+      {woodDivs} 
+    </div>}
+  </div>
+  </> )
+}
+
 function Windows(props){
-  const [selectedWindow,setSelectedWindow] = useState(null)
+  const [selectedWindow,setSelectedWindow] = useState(props.glass)
   const [glassType, setGlassType] = useState("Glass")
-  const [selectedInsert,setInsert] = useState(null)
-  const [showInserts,setShowInserts] = useState(false)
+  const [selectedInsert,setInsert] = useState(props.inserts? props.inserts: null)
+  const [showInserts,setShowInserts] = useState(props.glass && !props.glass.includes("StyleLite") ? true: false)
   const [selectedPosition,setPosition] = useState(props.door!="Sterling" ? "FIRST ROW":"TOP ROW")                
   const selectedDesign = props.design
   const doorCombo = props.doorCombination
-  console.log("DOOR COMBO",doorCombo)
+  //console.log("DOOR COMBO",doorCombo)
   // console.log("Design:",selectedDesign)
   // console.log("Type:",glassType)
   // console.log("Selected Insert",selectedInsert)
@@ -273,7 +279,7 @@ function Windows(props){
 
   let positionDivs = null;
   if (Object.keys(props.windows.position).length!=0){
-    console.log("Multiple positions available")
+    //console.log("Multiple positions available")
     positionDivs = Object.entries(props.windows.position).map( ([position,url]) => {
       return( 
       <div 
@@ -294,7 +300,7 @@ function Windows(props){
   if (doorCombo in props.windows.glass){
     let correctGlass = {}
     if (props.windows.glass[doorCombo] =="common"){
-      console.log("common")
+     // console.log("common")
       correctGlass = props.windows.commonGlass
     }
     else{
@@ -467,27 +473,14 @@ function Windows(props){
 }
 
 export default function Build(props) {
-  let params= useParams();
-  for (let param in params){
-    params[param] = params[param].charAt(0).toUpperCase() + params[param].slice(1)
-  }
-  console.log("URL PARAMS MODIFIED:",params)
-  //console.log("URL PARAMS:",type, doorName, size, design, color)
- //let paramsArray = [size, design, color];
-  // for (let i = 0; i < paramsArray.length; i++) {
-  //   if (paramsArray[i] !== undefined && paramsArray[i] !== null) {
-  //     paramsArray[i] = paramsArray[i].toUpperCase()+  paramsArray[i].slice(1);
-  //   }
-  // }
-  // console.log(paramsArray)
-
+  var params= useParams();
   const selectedDoor = props.selectedDoor
   const prices = selectedDoor.prices
   const [doorCombination, setDoorCombination] = useState("")
   const [Image,setImage] = useState(selectedDoor.defaultImg) 
-  const [Price, setPrice] = useState(500)
+  const [Price, setPrice] = useState(1000)
   const [Size,setSize] = useState("Double")
-  //console.log(" SIZE IS SET: ",Size)
+
   const [Design,setDesign] = useState(selectedDoor.defaultDesign)
   const [DesignStyle,setDesignStyle] = useState(null)/*UI highlight for design only*/
 
@@ -497,8 +490,6 @@ export default function Build(props) {
 
   const [showColors,setShowColors] = useState("")
   const [Color, setColor] = useState(selectedDoor.defaultColor)
-  console.log('COLOR:', Color)
-
   const [colorType,setColorType] = Color in selectedDoor.commonSolidColors ? useState("Solid Color") 
                                                                            : useState("Accents Woodtones")
   const [IconColor, setIconColor] = useState(null);/*UI highlight for color only*/
@@ -524,20 +515,83 @@ export default function Build(props) {
       Doors that have only one design have no design selections and set this value to true*/
   });
   const navigate = useNavigate()
-  //console.log("COLORTYPE:",colorType)
-  //console.log("COMBO",doorCombination)
   //console.log("CURRENT DOOR:",selectedDoor)
-  //console.log("Selections:",selections)
-  // console.log("Design:",Design,"Color:",Color,"Size:",Size,"ColorType:",colorType)
+  // console.log("Size:",Size,"Design:",Design,"Model insulation:",Insulation,"Color:",Color,"ColorType:",colorType,
+  //             "glassType:",glassType,"Glass:",Glass, "Inserts:",windowInserts
+  // )
   //console.log("Model insulation:",Insulation)
-
-  useEffect(()=>{/*Build door from URL Params if necessary*/
+  useEffect(()=>{/*Build door from URL Params if requested*/
     if (params?.size){
+      //props.setWaitForAPI(true)
+      for (let key in params) {
+        if (typeof params[key] === "string" && params[key].length > 0) {
+        // Split by space, underscore, or hyphen
+        let words = params[key].split(/[ _-]+/);
+        // Capitalize each word and rejoin with spaces
+        params[key] = words
+          .map(word => {
+            if (word.toLowerCase()=="with"){
+              return word.charAt(0).toLowerCase() + word.slice(1)
+            }
+            return word.charAt(0).toUpperCase() + word.slice(1)})
+          .join(" ");
+        }
+      }
+      console.log("URL PARAMS PASSED:",params)
       setLoading(true)
-      //alert("setting url data")
-    //Prescence of any parameter(first being door size) after "/build" means this is a fully built door
-      setColor(params.color)
-      fetchDoor(getPattern(Size,Design), {"Solid Color":params.color})
+
+      setSize(params.size)
+      setSelections(prev => ({ ...prev,Size:true}))
+
+      if (params.design) {
+        setDesign(params.design);
+        setSelections(prev => ({ ...prev, Design: true }));
+        setDesignStyle(params.design);
+      }
+
+      if (params.insType) {
+        setInsulationType(params.insType);
+      }
+
+      if (params.insType && params.design) {
+        handleInsulation(params.insType, params.design);
+      }
+
+      if (params.colorType) {
+        setColorType(params.colorType);
+      }
+
+      if (params.color) {
+        setColor(params.color);
+        setShowColors(true);
+        setIconColor(params.color);
+        setSelections(prev => ({ ...prev, Color: true }));
+      }
+
+      if (params.glassType) {
+        setAllowWindows(true);
+        setShowWindows(true);
+        setWindowCheckBox(true);
+        setGlassType(params.glassType);
+      }
+
+      (params.glassType && params.glass) ? setGlass(params.glass):null
+      if (params.inserts) {
+        setWindowInserts(params.inserts);
+      } else {
+       // alert("no inserts")
+        setWindowInserts("No Inserts");
+        params.inserts = "No Inserts"; 
+      }
+     params.position = params.position ? params.position : "FIRST ROW";
+
+
+      fetchDoor(getPattern(params.size,params.design ? params.design:Design), 
+      {"Width":params.size,
+      ...(params.design && { Design: params.design }),
+      ...(params.colorType && {[params.colorType]:params.color}),
+      ...(params.glassType && {[params.glassType]:params.glass,"Window Inserts":params.inserts,Position:params.position})
+      })
     }
   },[])
 
@@ -547,14 +601,24 @@ export default function Build(props) {
     function showPrices(){
       console.log("getting prices")
       //alert("Base Price")
-      let ins = InsulationType=="Standard" ? "Non-insulated" : "Insulated"
-      console.log(Design,ins,Size)
+      let ins = InsulationType== "Standard" ? "Non-insulated" : "Insulated"
       let priceDesignName = Design=="No Or Short Windows" ? "Short Windows" : Design
+      //console.log(Design,ins,Size)
+      if ("Any Design" in prices){
+        //alert("any designs")
+        priceDesignName = "Any Design"
+      }
+      else{
+        //alert("None")
+      }
+      console.log(priceDesignName,ins,Size)
       let baseKeys = prices[priceDesignName][ins][Size]
       console.log("BASE KEYS:",baseKeys)
+
       let newPrice = Number(baseKeys["basePrice"])
       console.log("\nNEW BASE PRICE", Design,ins,Size,newPrice)
-      console.log(baseKeys["options"])
+      console.log("CURRENT DOOR:",selectedDoor)
+      console.log("OPTIONS FOR THIS DOOR:",baseKeys["options"])
       if (colorType && colorType=="Accents Woodtones" && baseKeys["options"]["Accents Woodtones"]){
           newPrice += Number(baseKeys["options"]["Accents Woodtones"])
       }
@@ -576,7 +640,8 @@ export default function Build(props) {
       console.log("PRICE",Glass,windowInserts,colorType, newPrice)
       setPrice(newPrice)
     } 
-    //console.log("NEW PRICE FOR DESIGN:",Design, newPrice)
+
+   // console.log("NEW PRICE FOR DESIGN:",Design, newPrice)
     if (selectedDoor.id== "Planks" || selectedDoor.id=="SkylineFlush"){
       //alert("Here")
       if (Design && selections["Size"] && InsulationType){ 
@@ -594,7 +659,11 @@ export default function Build(props) {
       //alert("not here")
       showPrices();
       setShowColors(true);setAllowWindows(true)
-      setDoorCombination(`${selectedDoor.name.replace(" ","")} ${Design.replace(" ","")} ${InsulationType} ${Size}`)
+      let designName = Design.replace(" ","");
+      if (selectedDoor.collection=="carriage"){
+        designName = "AnyDesign"
+      }
+      setDoorCombination(`${selectedDoor.name.replace(" ","")} ${designName} ${InsulationType} ${Size}`)
     }
     else{
       //alert("not here")
@@ -681,6 +750,7 @@ export default function Build(props) {
     fetchDoor(getPattern(Size,design), {Design:design})
   }
   const handleInsulationType = (insulationType)=>{
+    setLoading(true)
     setInsulationType(insulationType)
     // console.log("Image URL:", selectedDoor.Insulation[insulationType]);
     // console.log("Insulation Model:", selectedDoor.Insulation[insulationType][Design])
@@ -693,6 +763,7 @@ export default function Build(props) {
       console.log(insulationType)
       insulationModelNumber = selectedDoor.Insulation[insulationType]["Any Design"]
     } else{ insulationModelNumber = selectedDoor.Insulation[insulationType][design]}
+    setTimeout(() =>setLoading(false), 500 )
     setInsulation(insulationModelNumber)
   }
   const handleColor= (userColor, type)=>{
@@ -809,7 +880,7 @@ export default function Build(props) {
     const firstRun = 1
     const api_key= "5809bc44-3cf7-42c5-8395-a9558bb40647"
     const responsePath = "https://chi-api.renoworks.com/data/CHI/"
-    //console.log("Paramter passed:",parameter)/*Parameter refers to the door option(Ex. Color:Blue) user has selected at this time*/
+    console.log("Paramter passed:",parameter)/*Parameter refers to the door option(Ex. Color:Blue) user has selected at this time*/
    // console.log(pattern)
     var solidColorOrWood = colorType
     var glassOrDesigner = glassType
@@ -882,14 +953,15 @@ export default function Build(props) {
   }).then((url) => {
         // console.log("Success:", url)
         // console.log(responsePath+url+"\n\n\n\n\n\n\n\n")
+        setTimeout(() =>setLoading(false), 300 )
         setImage(responsePath+url)})
     .catch((err) => console.error("Error:", err))
     .finally(() => {
-      setTimeout(() =>setLoading(false), 500 )
+       //props.setWaitForAPI(false)
     });
   }
   let buttonPanel = <> 
-    {!loading ? <h1>Price: ${Price} </h1>:<h1 className="wave">
+    {!loading ? <h1 className="price-header">Estimated Price: ${Price} </h1>:<h1 className="price-header wave">
     <span>L</span><span>o</span><span>a</span><span>d</span>
     <span>i</span><span>n</span><span>g</span>
     <span>.</span><span>.</span><span>.</span>
@@ -899,15 +971,19 @@ export default function Build(props) {
         <button className="back-btn" >Back</button>
       </Link>
       <button className="reset-btn" onClick={handleReset}>Reset</button>
-      <button className={`continue-btn ${doorValid ? "" : "disabled-bt"}`} disabled={!doorValid} onClick={handleContinue}>Submit Request</button>
+      <button className={`continue-btn ${doorValid ? "" : "disabled-bt"}`} disabled={!doorValid} onClick={handleContinue}>Submit</button>
     </div> </>
 
   return (
   (selectedDoor.available ?
   <div id="build-page-grid">
     <div id="door-section">
-      <h1>{selectedDoor.name}</h1>
-      <img src={loading ? doorgiLogo : Image}className={loading ? "loading-style" : ""}/>   
+      {/* <h1>{selectedDoor.name}</h1> */}
+      <div id="img-div">
+         <img id="loading-img" style={{visibility: loading?"visible":"hidden"}}src={doorgiLogo} className="loading-style"/>
+        {/* {!waitForAPI ? <img id="door-img" src={Image} /> : null }  */}
+        <img id="door-img" src={Image} />
+      </div> 
       {viewportWidth > 1025 && buttonPanel}{/*Show panel here for desktop only*/}
     </div>
     <div id="options-section">
@@ -951,6 +1027,8 @@ export default function Build(props) {
             showWindows={showWindows}
             windows={selectedDoor.windows}
             design={Design}
+            glass={Glass}
+            inserts={windowInserts}
           />)}
         </>
         ) : (
@@ -962,6 +1040,8 @@ export default function Build(props) {
           showWindows={showWindows}
           windows={selectedDoor.windows}
           design={Design}
+          glass={Glass}
+          inserts={windowInserts}
         />
         )}
       </>)}
@@ -973,6 +1053,7 @@ export default function Build(props) {
                    location="177 Mayhew Way Concord"/>)
   );
 }
+
 function DoorUnavailable({doorName,email,phone,location}) {
   const navigate = useNavigate();
 

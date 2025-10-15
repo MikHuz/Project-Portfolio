@@ -69,7 +69,4 @@ Local storage ensures user selections persist across sessions, and URL parameter
 A longer walkthrough of the **Garage Door Customizer** workflow is included in the repository:  
 `Garage_Demo.mp4`  
 
-> ⚠️ **Note:** Certain assets and functionalities have been removed from this repository for security and operational reasons.  
-> As a result, the application **will not fully function** if run from this repo intended for documentation purposes.
-
 ---

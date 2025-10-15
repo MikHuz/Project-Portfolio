@@ -138,6 +138,7 @@ traditional: {
   "Raised Panel": {
     available:true,
     name: "Raised Panel",
+    collection:"traditional",
     defaultImg: RaisedPanel,
     id: "Raised",
     defaultDesign: "Short Panel",
@@ -175,6 +176,7 @@ traditional: {
   "Stamped Carriage House": {
      available:true,
     name: "Stamped Carriage House",
+     collection:"traditional",
     defaultImg: StampedCarriage,
     id: "StampedCarriage",
     defaultDesign: "Short Panel",
@@ -211,6 +213,7 @@ traditional: {
   "Stamped Shaker": {
      available:true,
     name: "Stamped Shaker",
+     collection:"traditional",
     defaultImg: StampedShaker,
     id: "StampedShaker",
     defaultDesign: "Shaker",
@@ -246,6 +249,7 @@ traditional: {
   "Recessed Panel": {
      available:true,
     name: "Recessed Panel",
+     collection:"traditional",
     defaultImg: RecessedPanel,
     id: "Recessed",
     defaultDesign: "Short Panel",
@@ -295,8 +299,9 @@ traditional: {
 
 contemporary : {
   "Planks": {
-     available:true,
+    available:true,
     name:"Planks",
+     collection:"contemporary",
     defaultImg: Planks,
     id: "Planks",
     defaultDesign: "No Or Short Windows",
@@ -339,6 +344,7 @@ contemporary : {
   "Skyline Flush": {
     available:true,
     name:"Skyline Flush",
+     collection:"contemporary",
     defaultImg: SkylineFlush,
     id: "SkylineFlush",
     defaultDesign: "No Or Short Windows",
@@ -376,6 +382,7 @@ contemporary : {
   "Aluminum": {
     available:false,
     name:"Aluminum",
+     collection:"contemporary",
     defaultImg: Aluminum,
     id: "Aluminum",
     defaultDesign: "Full View",
@@ -403,6 +410,7 @@ contemporary : {
   "Sterling": {
     available:false,
     name:"Sterling",
+     collection:"contemporary",
     defaultImg: Sterling,
     id: "Sterling",
     defaultDesign: "Flush",
@@ -438,6 +446,7 @@ carriage: {
   "Steel Overlay": {
     available:true,
     name:"Steel Overlay",
+     collection:"carriage",
     defaultImg: carriageSteel,
     id: "Steel Overlay",
     defaultDesign: "11",
@@ -450,11 +459,11 @@ carriage: {
     },
     Insulation: {
       StandardImg: carriageSteelStandard,
-      Standard: { "Any Design": 5300 },
+      Standard: {},
       PremiumImg: aluminumPremium,
-      Premium: { "Any Design": 5600 }
+      Premium: {}
     },
-    commonSolidColors:{...commonSolidColors, "Bronze with Black":"#6E6D69,#000000ff","White with Black":"#EAEEED,#000000ff","Almond with Black":"#D5CBBF,#000000ff", "Sandstone with Black":"#9E9188,#000000ff"},
+    commonSolidColors:{...commonSolidColors,Gray:null, Brown:null, Graphite:null,"Desert Tan":null, "Bronze with Black":"#6E6D69,#000000ff","White with Black":"#EAEEED,#000000ff","Almond with Black":"#D5CBBF,#000000ff", "Sandstone with Black":"#9E9188,#000000ff"},
     colors: {},
     commonWoodTones:{...commonWoodTones},
     woods: {},
@@ -464,6 +473,7 @@ carriage: {
   "Fiber Glass Overlay": {
     available:false,
     name:"Fiber Glass Overlay",
+     collection:"carriage",
     defaultImg: carriageSteel,
     id: "FiberGlassOverlay",
     defaultDesign: "11",
@@ -480,7 +490,7 @@ carriage: {
       PremiumImg: aluminumPremium,
       Premium: { "Any Design": 5600 }
     },
-    commonSolidColors:{...commonSolidColors, "Bronze with Black":"#6E6D69,#000000ff","White with Black":"#EAEEED,#000000ff","Almond with Black":"#D5CBBF,#000000ff", "Sandstone with Black":"#9E9188,#000000ff"},
+    commonSolidColors:{...commonSolidColors,Gray:null, Brown:null, Graphite:null,"Desert Tan":null, "Bronze with Black":"#6E6D69,#000000ff","White with Black":"#EAEEED,#000000ff","Almond with Black":"#D5CBBF,#000000ff", "Sandstone with Black":"#9E9188,#000000ff"},
     colors: {},
     commonWoodTones:{...commonWoodTones},
     woods: {},
@@ -490,6 +500,7 @@ carriage: {
   "Shoreline": {
     available:false,
     name:"Shoreline",
+     collection:"carriage",
     defaultImg: Shoreline,
     id: "Shoreline",
     defaultDesign: "10",
@@ -520,6 +531,7 @@ carriage: {
   "Wood Overlay": {
     available:false,
     name:"Wood Overlay",
+     collection:"carriage",
     defaultImg: carriageSteel,
     id: "Steel Overlay",
     defaultDesign: "11",
@@ -549,7 +561,6 @@ carriage: {
 const stringText = ``;
 
 export async function getDoors() {
-  //alert("inside doors")
   const res = await fetch('/test-deployment/dist/doorPrices.csv');
   const text = await res.text();
   const rows = text.trim().split("\n");
@@ -562,33 +573,37 @@ export async function getDoors() {
     if (values.every(v => v.trim() === "")){
       return; // Skip rows where all values are empty
     }
-    //console.log(JSON.stringify(values));
     const entries = {};
     headers.forEach((header, idx) => entries[header] = values[idx]);
       for (let key in entries){
       if (entries[key]=="NA" || entries[key]=="???" || entries[key]==="$???") entries[key] = null;
     }
-    let { Collection, Name, Design, Build, Size, Model, "Base Price": basePrice, "Solid Color":solidColor, Woodtone, 
-          Glass,Tinted, Plain, Obscure, Frosted, Seeded, glueChips,Inserts,StyleLite,"D.Glass": designerGlass } = entries;
+    let { /*Extact every possible option even if they dont exist in the CSV file*/
+    Collection, Name, Design, Build, Size, Model, "Base Price": basePrice, "Solid Color":solidColor, Woodtone, 
+    Glass,Tinted, Plain, Obscure, Frosted, Seeded, glueChips,Inserts,StyleLite,"D.Glass": designerGlass 
+    } = entries;
     
-          Name = (Name =="Stamped Carriage") ? "Stamped Carriage House" : Name
+    Name = (Name =="Stamped Carriage") ? "Stamped Carriage House" : Name
     if (Collection=="Carriage"){
       console.log("Carriage Here")
     }
+
     prices[Collection] ||= {};
     prices[Collection][Name] ||= {};
     prices[Collection][Name][Design] ||= {};
     prices[Collection][Name][Design][Build] ||= {};
     prices[Collection][Name][Design][Build][Size] ||= { basePrice, options: {} };
+
     const opts = prices[Collection][Name][Design][Build][Size].options;
     opts["Solid Color"] ||= solidColor;
     opts["Accents Woodtones"] ||= Woodtone;
+
     let glassTracker = []
-    if (Glass!= null){
+    if (Glass!= null){/*Removes all glasses not inputted into the csv file*/
       opts["Glass"] = {}
       if (Plain !== undefined) { 
         opts["Glass"]["Plain"] ||= Plain; 
-        glassTracker.push({"Plain":Plain});
+        glassTracker.push({"Plain":Plain});/*Push only what actually exists in the csv*/
       }
       if (Obscure !== undefined) {
         opts["Glass"]["Obscure"] ||= Obscure;
@@ -614,37 +629,36 @@ export async function getDoors() {
     else{
       opts["Glass"] = null
     }
+
     if (designerGlass!= null){
 
     }
     else{
       opts["Designer Glass"] = {}
     }
+
     opts["Inserts"] ||= Inserts;
     opts["StyleLite"] ||= StyleLite;
-    // console.log(`${Collection}, ${Name}, ${Design}, ${Build}, ${Size}`)
-    // console.log(prices[Collection][Name][Design][Build][Size])
+
     const Ins = (Build=="Non-insulated" ? "Standard": "Premium")
     const doorID = Name.replace(" ", "")+ " " + Design.replace(" ", "") + " "  + Ins + " "+ Size
     const doorType = Collection.charAt(0).toLowerCase() + Collection.slice(1)
-    //console.log("ID:",doorID)
+
     if (opts["Accents Woodtones"]){Doors[doorType][Name].woods[doorID] = "common"}
     if (opts["Solid Color"]){  Doors[doorType][Name].colors[doorID] ="common"}
    
     if (Collection=="Traditional" && !opts["Accents Woodtones"] && opts["Solid Color"]){
-        //console.log("ADDING modern woods")
        Doors[doorType][Name].colors[doorID] = {...commonSolidColors, "Modern Woodgrain":modernWoodGrain,"Classic Woodgrain":classicWoodGrain}
     }
     else if (Collection=="Traditional" && opts["Accents Woodtones"]  && !opts["Solid Color"]){
-      //console.log("ADDING common colors")
       Doors[doorType][Name].woods[doorID] = "common"
     }
+
     if (opts["Glass"]){
-      //console.log(Collection)
       Doors[doorType][Name].windows.glass[doorID] = {}
       let doesNotHaveNull = true
 
-      glassTracker.forEach(glass =>{
+      glassTracker.forEach(glass =>{/*Build glass combinations*/
         for (const glassName in glass){
           if (glass[glassName] != null) {
             Doors[doorType][Name].windows.glass[doorID][glassName] = commonGlass[glassName]
@@ -671,8 +685,6 @@ export async function getDoors() {
       //Doors[doorType][Name].windows.inserts = {"Any Design": {...commonInserts}}
       //Add dynamic options like with glass if needed later. Hardcoded inserts for now
     }
-    //console.log(Doors[doorType])
-    //console.log("\n")
   });
 
   // assign price data  to doors
@@ -685,6 +697,5 @@ export async function getDoors() {
   for (let doorName in Doors["carriage"]){
     Doors["carriage"][doorName].prices = prices["Carriage"]?.[doorName] || {}
   }
-  //console.log("LOGGING DOORS:",Doors)
   return Doors;
 }
