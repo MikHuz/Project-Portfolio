@@ -1,11 +1,12 @@
-## Hi, I'm Michael Huziy 👋
+# Hi, I'm Michael 👋
 
-I'm a recent Computer Science graduate from California State University, Monterey Bay, with a strong foundation in software engineering and a dedication for continuous learning. Recently, I earned the **Meta Front-End Developer Certificate** and built a **React-based web application** for a local business as a volunteer project, applying modern web technologies to real-world needs.  
+I’m a recent Computer Science graduate from California State University, Monterey Bay, with a strong foundation in software engineering and problem-solving. I enjoy optimizing workflows, refining solutions to the ladt detail, and leveraging AI-assisted development tools to boost productivity and quality.
 
-I’m eager to grow in the **IT and software engineering field**, with interests spanning **front-end and back-end development, cloud technologies, and data-driven solutions**. My current focus is expanding beyond software development into **cloud computing and cybersecurity**, as I believe these areas are vital to the future of technology and critical infrastructure. I value continual growth and staying informed so I can deliver high-quality, effective solutions.  
+I’m eager to grow in the IT and software engineering field, with interests spanning front-end and back-end development, cloud technologies, and data-driven solutions. Recently, I earned the Meta Front-End Developer Certificate and developed a React-based web application for a local business, applying modern web technologies to real-world needs.
 
-This repository compiles some of the work from my studies, projects and personal work I have developed over my time. I'm excited to continue developing practical skills, tackling technical challenges, and applying my knowledge across diverse domains!
+My current focus is expanding beyond software development into cloud computing and cybersecurity, as I believe these areas are vital to the future of technology and critical infrastructure. I’m also pursuing a cloud certification to strengthen my understanding of cloud infrastructure, deployment, and scalability, while continuing to broaden my technical skill set beyond traditional development.
 
+This repository compiles work from my studies, projects, and personal development over time. I’m excited to continue building practical skills, tackling technical challenges, and applying my knowledge across diverse domains!
 
 
 
