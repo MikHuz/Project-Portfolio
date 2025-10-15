@@ -1,6 +1,8 @@
-## U-Net
+## U-Net Model
 
 ### U-Net Architecture
+
+![U-Net Architecture](u-net-architecture.png)
 
 The U-Net model is a specialized extension of the standard encoder-decoder architecture, designed for efficient image segmentation, particularly in medical imaging and other pixel-level tasks. It builds on the encoder-decoder concept by adding skip connections to preserve fine-grained spatial information. Key components include:
 
