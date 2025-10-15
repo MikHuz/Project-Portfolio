@@ -36,34 +36,8 @@ The goal is to **enhance diagnostic accuracy**, enabling faster treatment decisi
 
 ---
 
-## ⚙️ Setup Instructions
-### 1️⃣ Clone the Repository
-   ```bash
-   git clone https://github.com/MikHuz/AI-Models.git
-   cd AI-Models
-   ```
-2️⃣ Create and Activate the Conda Environment
-   ```bash
-   conda create -n ai-models python=3.9
-   conda activate ai-models
-   ```
-3️⃣ Install Dependencies
-   ```bash
-   pip install
-   ```
-5️⃣ Run the Training Notebook
-   ```bash
-   jupyter notebook
-   ```
-5️⃣ Run the Training Notebook
-   - Select a model (U-Net or Encoder-Decoder).
-   - Load MRI dataset paths in the configuration cell.
-   - Execute all cells to begin training.
-
-> ⚠️ **Note:** An NVIDIA CUDA-enabled GPU is recommended for efficient training.
-
-🧪 Demo
-🩺 Sample Prediction
+## 🧪 Demo
+### 🩺 Sample Prediction
 | Original Image | Model Prediction | True Mask |
 |--------|------------------|------------|
 | ![Input Image](Image.png) | ![Prediction](prediction.png) | ![Mask](testmask.png) |
@@ -89,6 +63,7 @@ The primary goal of these masks is to determine whether a tumor is present, and 
   <img src="Models/U-NET%20Architecture/DICE_IOU.png" alt="DICE/IOU" style="width:70%; max-width:600px; height:auto;"><br>
   <strong>Dice & IoU Metrics:</strong> Quantify segmentation accuracy per epoch — higher values reflect more accurate masks.
 </p>
+> ⚠️ **Note:** An NVIDIA CUDA-enabled GPU is recommended for efficient training.
 
 <h4>📊 Interpretation Notes</h4>
 
@@ -97,3 +72,26 @@ The primary goal of these masks is to determine whether a tumor is present, and 
 - A high Dice/IoU score indicates strong overlap with the human-defined masks, demonstrating the model accurately segments the target regions.  
 - Remember: The true masks are fully filled for evaluation purposes; actual tumor textures may vary in biological data.
 
+## ⚙️ Setup Instructions
+### 1️⃣ Clone the Repository
+   ```bash
+   git clone https://github.com/MikHuz/AI-Models.git
+   cd AI-Models
+   ```
+2️⃣ Create and Activate the Conda Environment
+   ```bash
+   conda create -n ai-models python=3.9
+   conda activate ai-models
+   ```
+3️⃣ Install Dependencies
+   ```bash
+   pip install
+   ```
+5️⃣ Run the Training Notebook
+   ```bash
+   jupyter notebook
+   ```
+5️⃣ Run the Training Notebook
+   - Select a model (U-Net or Encoder-Decoder).
+   - Load MRI dataset paths in the configuration cell.
+   - Execute all cells to begin training.
