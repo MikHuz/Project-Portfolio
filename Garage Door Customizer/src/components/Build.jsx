@@ -1070,9 +1070,9 @@ function DoorUnavailable({doorName,email,phone,location}) {
         </p>
 
         <div className="contact-info">
-          {email && <p>Email: <span>{email}</span></p>}
-          {phone && <p>Phone: <span>{phone}</span></p>}
-          {location && <p>Location: <span>{location}</span></p>}
+          {email && <p>Email: <span>Omitted</span></p>}
+          {phone && <p>Phone: <span>Omitted</span></p>}
+          {location && <p>Location: <span>Omitted</span></p>}
         </div>
 
         <button className="back-btn" onClick={() => navigate(-1)}>

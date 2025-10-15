@@ -41,6 +41,7 @@ function SlideShow({ handleCarouselClick, subTypeImgs,index,doorNavName,doorName
     </div>
   );
 }
+
 function DoorSelector({Doors, handleDoorSelection,doorType,doorImgs}) {
   const [doorIndex, setDoorIndex] = useState(0)
   // console.log("DOORS RECIEVED:",Doors)
@@ -52,7 +53,7 @@ function DoorSelector({Doors, handleDoorSelection,doorType,doorImgs}) {
     navigate(`/${doorType}/${doorNavName}/build`)
   }
   const handleBuildBtn = (doorNavName,doorName) =>{
-     //console.log(doorNavName,doorName);
+  //console.log(doorNavName,doorName);
   handleDoorSelection(Doors[doorName]) }/*Goes to parent for correct Route*/
 
   return (

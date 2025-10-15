@@ -65,8 +65,8 @@ Carriage,,Shoreline,All Designs???,Insulated,Double,5602,???,NA,???,???,???,???,
 ,,,,,,,,,,,,,,,,,
 Carriage,,Wood Overlay,All Designs???,Insulated,Single,5400,???,NA,NA,???,???,???,???,???,???,NA,NA`;
 
-  //const res = await fetch('/test-deployment/dist/doorPrices.csv');
-  //const text = await res.text();
+//const res = await fetch('/test-deployment/dist/doorPrices.csv');
+//const text = await res.text();
 let commonSolidColors = {White:"#EAEEED",Sandstone:"#9E9188",Almond:"#D5CBBF",Brown:"#4D3B37",Bronze:"#6E6D69",Gray:"#9C9DA1","Desert Tan":"#CBC4B1","Black":"#242625","Graphite":"#46494E"}
 let commonInserts = {
   "No Inserts": "noInserts",
@@ -511,8 +511,8 @@ let Doors = {
 }//These doors and common items are a mock, do not contain images or urls//
 
 
- //alert("inside doors")
- // const res = await fetch('/test-deployment/dist/doorPrices.csv');
+  //alert("inside doors")
+  // const res = await fetch('/test-deployment/dist/doorPrices.csv');
   //const text = await res.text();
   const rows = text.trim().split("\n");
   //const rows = stringText.trim().split("\n");
