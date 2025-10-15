@@ -4,6 +4,11 @@ This project implements an Attention U-Net architecture. While I was able to int
 
 ## Attention U-Net Architecture
 
+<p align="center">
+  <img src="attention-image3.jfif" alt="Encoder-Decoder Architecture" style="width:80%; height:500px; object-fit:cover;">
+</p>
+
+
 The Attention U-Net model extends the original U-Net architecture by incorporating attention mechanisms to improve segmentation accuracy, especially in complex images with varying levels of detail. Key components and functionality include:
 
 **Encoder:** Similar to the traditional U-Net, the encoder captures high-level semantic features from the input image using convolutional layers and max-pooling operations. This progressively reduces spatial dimensions while increasing the depth of the feature maps.  
