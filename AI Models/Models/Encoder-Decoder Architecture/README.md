@@ -1,6 +1,14 @@
-## Encoder-Decoder
+# Encoder-Decoder Model
 
-### Encoder-Decoder Architecture
+## Encoder-Decoder Architecture
+
+<p align="center">
+  <img
+    src="encoder-image2.png"
+    alt="Encoder-Decoder Architecture"
+    style="width:85%; max-width:1200px; height:auto; max-height:700px; object-fit:contain;"
+  />
+</p>
 
 The encoder-decoder architecture is a widely used approach for image segmentation tasks. It consists of two main components that work together to extract features from an image and reconstruct a segmentation mask:
 
