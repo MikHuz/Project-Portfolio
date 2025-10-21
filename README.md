@@ -1,4 +1,4 @@
-Hi, I'm Michael 👋
+## Hi, I'm Michael 👋
 
 I’m a recent Computer Science graduate from California State University, Monterey Bay, with a strong foundation in **software engineering, problem-solving, and full-stack development**. I enjoy optimizing workflows, refining solutions, and leveraging **AI-assisted tools** to boost productivity and enhance output.
 
@@ -30,7 +30,7 @@ I’m eager to contribute meaningfully, collaborate effectively, and apply my kn
 - Simulated planetary motion and 3D visualization of the solar system with controls.
 - **Tools/Tech:** JavaScript, WebGL, shaders, physics/math simulations.
 
-- ### **Web RayTracer**
+### **Web RayTracer**
 - Implemented a **ray tracing renderer** in a browser-based environment.
 - **Tools/Tech:** JavaScript, WebGL, mathematics for 3D rendering.
 
@@ -38,4 +38,4 @@ I’m eager to contribute meaningfully, collaborate effectively, and apply my kn
 - Applied custom image filtering techniques for batch processing and visualization.
 - **Tools/Tech:** Python, image processing algorithms.
 
-Feel free to explore my projects for additional details and context on each project, showcasing examples of my work.
+### Feel free to explore my projects for additional details and context on each project
