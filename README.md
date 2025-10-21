@@ -1,12 +1,41 @@
 Hi, I'm Michael 👋
 
-I’m a recent Computer Science graduate from California State University, Monterey Bay, with a strong foundation in software engineering and problem-solving. I have a knack for optimizing workflows, refining solutions to the last detail, and leveraging AI-assisted development tools to boost productivity, streamline coding, and enhance solution output.
+I’m a recent Computer Science graduate from California State University, Monterey Bay, with a strong foundation in **software engineering, problem-solving, and full-stack development**. I enjoy optimizing workflows, refining solutions, and leveraging **AI-assisted tools** to boost productivity and enhance output.
 
-I’m skilled in full-stack development, with experience designing, building, and integrating both front-end and back-end systems. I enjoy creating efficient, scalable, and user-focused applications that bridge technical precision with real-world functionality. I’m eager to grow in the IT and software engineering field, with interests spanning cloud technologies, data-driven solutions, and system optimization. Recently, I earned the Meta Front-End Developer Certificate and developed a React-based web application for a local business, applying modern web technologies to improve user experience and performance.
+I’m skilled in designing, building, and integrating both front-end and back-end systems, creating efficient, scalable, and user-focused applications that bridge technical precision with real-world functionality. I enjoy exploring new technologies, tackling complex problems, and delivering high-quality solutions that make a tangible impact.
 
-My current focus is expanding beyond software development into cloud computing and cybersecurity, as I believe these areas are vital to the future of technology and critical infrastructure. I’m currently pursuing a cloud certification to strengthen my understanding of cloud infrastructure, deployment, and scalability, while continuing to broaden my technical skill set beyond traditional development.
+Recently, I earned the **Meta Front-End Developer Certificate** and developed a React-based web application for a local business to improve user experience. I’m expanding my expertise into cloud computing and cybersecurity, as I believe these areas are critical for the future of technology and for developing a broader perspective as an IT professional. I’m currently pursuing a cloud certification to deepen my understanding of cloud infrastructure, broadening my technical skill set beyond traditional development.
 
-This repository compiles work from my studies, projects, and personal development over time. I’m excited to continue building practical skills, tackling technical challenges, and applying my knowledge across diverse domains!
+I’m eager to contribute meaningfully, collaborate effectively, and apply my knowledge to real-world challenges in IT and software engineering. This repository compiles work from my studies, projects, and personal development, showcasing practical skills and diverse technical solutions.
 
+---
 
+## Featured Projects Quick Overview
 
+### **Garage Door Customizer**
+- Built a **full-stack web application** for a local business allowing customers to customize garage doors.
+- Developed interactive React components integrated with backend APIs for dynamic updates.
+- **Tools/Tech:** React, JavaScript, HTML, CSS, Git, API integration.
+
+### **AI Models**
+- Implemented multiple AI architectures including **U-Net, Attention U-Net, and Encoder-Decoder networks**.
+- Trained models for biomedical image segmentation, achieving performance improvements over baseline benchmarks.
+- **Tools/Tech:** Python, PyTorch, Python data visualization, CNNs, data pipelines, model optimization.
+
+### **Meta Capstone**
+- Developed a responsive web application as a capstone project, applying **UI/UX principles, software engineering best practices, and responsive design**.
+- **Tools/Tech:** React, JavaScript, HTML/CSS, Figma, UI/UX design, unit testing.
+
+### **Web Solar System Simulation**
+- Simulated planetary motion and 3D visualization of the solar system with controls.
+- **Tools/Tech:** JavaScript, WebGL, shaders, physics/math simulations.
+
+- ### **Web RayTracer**
+- Implemented a **ray tracing renderer** in a browser-based environment.
+- **Tools/Tech:** JavaScript, WebGL, mathematics for 3D rendering.
+
+### **Image Filtering**
+- Applied custom image filtering techniques for batch processing and visualization.
+- **Tools/Tech:** Python, image processing algorithms.
+
+Feel free to explore my projects for additional details and context on each project, showcasing examples of my work.
