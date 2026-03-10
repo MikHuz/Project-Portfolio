@@ -1,20 +1,40 @@
-## Hi, I'm Michael 👋
+## Hi, my name is Michael 👋
 
-I’m a recent Computer Science graduate from California State University, Monterey Bay, with a strong foundation in **software engineering, problem-solving, and full-stack development**. I enjoy optimizing workflows, refining solutions, and leveraging **AI-assisted tools** to boost productivity and enhance output.
+Full-Stack Software Engineer with expereince building user-focused systems that create real business impact.
 
-I’m skilled in designing, building, and integrating both front-end and back-end systems, creating efficient, scalable, and user-focused applications that bridge technical precision with real-world functionality. I enjoy exploring new technologies, tackling complex problems, and delivering high-quality solutions that make a tangible impact.
+Recent CS graduate with contract experience developing software applications, stabilizing production WordPress systems, and integrating APIs, automation, and AI workflows to boost business operational efficiency.
 
-Recently, I earned the **Meta Front-End Developer Certificate** and developed a React-based web application for a local business to improve user experience. I’m expanding my expertise into cloud computing and cybersecurity, as I believe these areas are critical for the future of technology and for developing a broader perspective as an IT professional. I’m currently pursuing a cloud certification to deepen my understanding of cloud infrastructure, broadening my technical skill set beyond traditional development.
+### Key Highlights from Recent Contract Work 
+- Built a **mobile-first React SPA** for real-time product customization with dynamic pricing → automated high-value lead intake and reduced manual quoting.
+- Re-engineered unstable **WordPress site** (includingdeep PHP/theme mods, dependency fixes) → stabilized platform and enabled non-technical content updates, boosted organic URL search visiblity by around **300% daily** and increased the site by **10+ Google ranking gains**.
+- Engineered **reusable SEO templates** → empowered stakeholders to publish SEO optimized pages at scale, reducing manual development
+- Centralized multi-source leads into unified CRM via **APIs, webhooks, automations** → eliminated business fragmentation
+- Engineered automation workflows for customer interactions and opportunity pipelines, **streamlining customer management and enabling staff to boost their productivity** and process leads and follow-ups more efficiently.
+- Created and deployed **AI-powered chatbots + voice/SMS agents** → automated FAQs, trobleshooting, lead qualification, after-hours capture, and appointment scheduling to boost efficiency.
 
-I’m eager to contribute meaningfully, collaborate effectively, and apply my knowledge to real-world challenges in IT and software engineering. This repository compiles work from my studies, projects, and personal development, showcasing practical skills and diverse technical solutions.
+**Languages:**
+JavaScript • Python • Java • C/C++ • SQL • PHP
 
----
+**Frontend:**
+React • HTML/CSS • Responsive/Mobile-First Design • UI/UX • WordPress
 
-## Featured Projects Quick Overview
+**Backend & Integration:**
+Node.js / Express • APIs • Webhooks • Database Design • CRM Integrations • Workflow Automation • Cloud Fundementals • Unit Testing 
 
-### **Garage Door Customizer**
-- Built a **full-stack web application** for a local business allowing customers to customize garage doors.
-- Developed interactive React components integrated with backend APIs for dynamic updates.
+**AI & Optimization:**
+AI Integration • Prompt Engineering • Chatbots • Voice/SMS Agents • Technical SEO • Schema Markup • Performance Optimization
+
+### Currently Exploring
+- Cloud infrastructure (Azure) and deeper AI orchestration
+- Recent AI Agents and their capabilities
+- Cybersecurity fundamentals to build more secure, reliable systems
+
+## Selected Projects Overview
+
+### **Garage Door Customizer SPA**
+- **Improved sales efficiency by streamlining customer interactions, reducing manual quote generation, and boosting customer satisfaction.**
+- Built a mobile-first React single-page application for a home service business, allowing customers to explore and customize garage doors with real-time pricing.
+-Integrated with backend APIs and database systems to provide dynamic updates for customer selections, allowing instant quotes and configuration sharing via URLs.
 - **Tools/Tech:** React, JavaScript, HTML, CSS, Git, API integration.
 
 ### **AI Models**
@@ -23,7 +43,8 @@ I’m eager to contribute meaningfully, collaborate effectively, and apply my kn
 - **Tools/Tech:** Python, PyTorch, Python data visualization, CNNs, data pipelines, model optimization.
 
 ### **Meta Capstone**
-- Developed a responsive web application as a capstone project, applying **UI/UX principles, software engineering best practices, and responsive design**.
+- Developed a multi-page, responsive React web application simulating a restaurant reservation workflow as part of the Meta front engineer certificate capstone, demonstrating **UI/UX principles, software engineering best practices, and responsive design**..
+- Designed and prototyped the app in Figma, implemented accessibility best practices, and unit-tested components with Jest for reliability and maintainable code.
 - **Tools/Tech:** React, JavaScript, HTML/CSS, Figma, UI/UX design, unit testing.
 
 ### **Web Solar System Simulation**
@@ -39,3 +60,9 @@ I’m eager to contribute meaningfully, collaborate effectively, and apply my kn
 - **Tools/Tech:** Python, image processing algorithms.
 
 ### Feel free to explore my projects for additional details and context on each project
+
+Open to full-time SWE roles where I can contribute to impactful, efficient products. Let's connect!
+
+📫 **michaelhuziywork@gmail.com** • [LinkedIn](https://www.linkedin.com/in/michael-h-640884251) • [Resume](https://github.com/MikHuz/Michael_Huziy_Resume/raw/main/Michael_Huziy_Software_Engineer_Resume.pdf) • San Francisco Bay Area, CA
+Thanks for visiting! 🚀
+---
