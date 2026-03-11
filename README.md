@@ -63,6 +63,6 @@ AI Integration • Prompt Engineering • Chatbots • Voice/SMS Agents • Tech
 
 Open to full-time SWE roles where I can contribute to impactful, efficient products. Let's connect!
 
-📫 **michaelhuziywork@gmail.com** • [LinkedIn](https://www.linkedin.com/in/michael-h-640884251) • [Resume](https://github.com/MikHuz/Michael_Huziy_Resume/raw/main/Michael_Huziy_Software_Engineer_Resume.pdf) • San Francisco Bay Area, CA
+📫 **michaelhuziywork@gmail.com** • [LinkedIn](https://www.linkedin.com/in/michael-h-640884251) • [Resume](https://github.com/MikHuz/Michael_Huziy_Resume/raw/c0e1ec322663f8ba4494aa3af2bf20211a8665c6/Michael_Huziy_Software_Engineer_Resume.pdf) • San Francisco Bay Area, CA
 Thanks for visiting! 🚀
 ---
