@@ -1,28 +1,29 @@
-## Hi, my name is Michael 👋
+## Hi, my name is Michael 
 
 Full-Stack Software Engineer with expereince building user-focused systems that create real business impact.
 
-Recent CS graduate with contract experience developing software applications, stabilizing production WordPress systems, and integrating APIs, automation, and AI workflows to boost business operational efficiency.
+Recent CS graduate with contract experience developing software applications, stabilizing production web platforms, integrating APIs, automation, and creating LLM/AI workflows to boost business operational efficiency and customer interactions.
 
 ### Key Highlights from Recent Contract Work 
-- Built a **mobile-first React SPA** for real-time product customization with dynamic pricing → automated high-value lead intake and reduced manual quoting.
-- Re-engineered unstable **WordPress site** (includingdeep PHP/theme mods, dependency fixes) → stabilized platform and enabled non-technical content updates, boosted organic URL search visiblity by around **300% daily** and increased the site by **10+ Google ranking gains**.
+- Built a **mobile-first React SPA** for real-time product customization with dynamic pricing → automated high-value lead intake and reduced manual quoting from hours to seconds
+- Rebuilt and re-engineered unstable **websites** (including deep PHP/theme mods, dependency fixes) → stabilized platform and enabled non-technical content updates, boosted organic URL search visiblity by around **300% daily**, increased the site by **15+ Google ranking gains** and **boosted traffic by around 4-5 times**.
 - Engineered **reusable SEO templates** → empowered stakeholders to publish SEO optimized pages at scale, reducing manual development
 - Centralized multi-source leads into unified CRM via **APIs, webhooks, automations** → eliminated business fragmentation
 - Engineered automation workflows for customer interactions and opportunity pipelines, **streamlining customer management and enabling staff to boost their productivity** and process leads and follow-ups more efficiently.
 - Created and deployed **AI-powered chatbots + voice/SMS agents** → automated FAQs, trobleshooting, lead qualification, after-hours capture, and appointment scheduling to boost efficiency.
-
+- **Built LLM-driven workflow automation systems** capable of interpreting natural language requests and executing multi-step actions across business platforms, enabling non-technical staff to automate specific operational tasks.
+- 
 **Languages:**
 JavaScript • Python • Java • C/C++ • SQL • PHP
 
 **Frontend:**
-React • HTML/CSS • Responsive/Mobile-First Design • UI/UX • WordPress
+React • HTML/CSS • Responsive/Mobile-First Design • UI/UX • Content Management systems
 
 **Backend & Integration:**
 Node.js / Express • APIs • Webhooks • Database Design • CRM Integrations • Workflow Automation • Cloud Fundementals • Unit Testing 
 
 **AI & Optimization:**
-AI Integration • Prompt Engineering • Chatbots • Voice/SMS Agents • Technical SEO • Schema Markup • Performance Optimization
+AI Integration •• Prompt Engineering • Chatbots • Voice/SMS Agents • Technical SEO • Schema Markup • Performance Optimization
 
 ### Currently Exploring
 - Cloud infrastructure (Azure) and deeper AI orchestration
@@ -63,6 +64,6 @@ AI Integration • Prompt Engineering • Chatbots • Voice/SMS Agents • Tech
 
 Open to full-time SWE roles where I can contribute to impactful, efficient products. Let's connect!
 
-📫 **michaelhuziywork@gmail.com** • [LinkedIn](https://www.linkedin.com/in/michael-h-640884251) • [Resume](https://github.com/MikHuz/Michael_Huziy_Resume/raw/c0e1ec322663f8ba4494aa3af2bf20211a8665c6/Michael_Huziy_Software_Engineer_Resume.pdf) • San Francisco Bay Area, CA
+📫 **michaelhuziywork@gmail.com** • [LinkedIn](https://www.linkedin.com/in/michael-h-640884251) • [Resume](https://github.com/MikHuz/Michael_Huziy_Resume/raw/c0e1ec322663f8ba4494aa3af2bf20211a8665c6/Michael_Huziy_Resume.pdf) • San Francisco Bay Area, CA
 Thanks for visiting! 🚀
 ---
