@@ -1,0 +1,57 @@
+Collection,ID,Name,Design,Build,Size,Model,Installation,Base Price,Solid Color,Woodtone,Glass,Plain,Obscure,Tinted,Frosted,Inserts,Madison,Stockton,StyleLite,D.Glass,Hardware
+Traditional,1,Raised Panel,Short Panel,Non-insulated,Single,2250,595.00,$786.52,Yes,NA,Yes,246.1,299.64,NA,NA,110.94,NA,NA,NA,NA,NA
+Traditional,2,Raised Panel,Short Panel,Non-insulated,Double,2250,695,"$1,384.00",Yes,NA,Yes,492.26,599.26,NA,NA,221.84,NA,NA,NA,NA,NA
+Traditional,3,Raised Panel,Short Panel,Insulated,Single,2283,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Traditional,4,Raised Panel,Short Panel,Insulated,Double,2283,695,"$2,170.44",Yes,"1,294.12",Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,NA,NA,NA
+Traditional,5,Raised Panel,Long Panel,Non-insulated,Single,4250,595.00,$786.52,Yes,NA,Yes,246.1,299.64,NA,NA,110.94,NA,NA,NA,NA,NA
+Traditional,6,Raised Panel,Long Panel,Non-insulated,Double,4250,695,"$1,384.00",Yes,NA,Yes,492.26,599.26,NA,NA,221.84,NA,NA,NA,NA,NA
+Traditional,7,Raised Panel,Long Panel,Insulated,Single,4283,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Traditional,8,Raised Panel,Long Panel,Insulated,Double,4283,695,"$2,170.44",Yes,"1,294.12",Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,NA,NA,NA
+Traditional,9,Stamped Carriage,Short Panel,Non-insulated,Single,5250,595.00,$873.92,Yes,NA,Yes,255.04,310.32,NA,NA,117.72,NA,NA,NA,NA,Yes
+Traditional,10,Stamped Carriage,Short Panel,Non-insulated,Double,5250,695.00,"$1,569.48",Yes,NA,Yes,510.08,620.66,NA,NA,235.42,NA,NA,NA,NA,Yes
+Traditional,11,Stamped Carriage,Short Panel,Insulated,Single,5283,595.00,"$1,360.68",Yes,647.06,Yes,353.12,399.34,454.8,602.7,122,NA,NA,NA,NA,Yes
+Traditional,12,Stamped Carriage,Short Panel,Insulated,Double,5283,695.00,"$2,373.80",Yes,"1,294.12",Yes,706.22,798.66,909.58,"1,205.38",244.04,NA,NA,NA,NA,Yes
+Traditional,13,Stamped Carriage,Long Panel,Non-insulated,Single,5950,595.00,$873.92,Yes,NA,Yes,255.04,310.32,NA,NA,117.72,NA,NA,NA,NA,Yes
+Traditional,14,Stamped Carriage,Long Panel,Non-insulated,Double,5950,695.00,"$1,569.48",Yes,NA,Yes,510.08,620.66,NA,NA,235.42,NA,NA,NA,NA,Yes
+Traditional,15,Stamped Carriage,Long Panel,Insulated,Single,5983,595.00,"$1,360.68",Yes,647.06,Yes,353.12,399.34,454.8,602.7,122,NA,NA,NA,NA,Yes
+Traditional,16,Stamped Carriage,Long Panel,Insulated,Double,5983,695.00,"$2,373.80",Yes,"1,294.12",Yes,706.22,798.66,909.58,"1,205.38",244.04,NA,NA,NA,NA,Yes
+Traditional,17,Stamped Shaker,Shaker,Non-insulated,Single,2550,595.00,$786.52,Yes,NA,Yes,255.04,299.64,NA,NA,117.72,NA,NA,NA,NA,Yes
+Traditional,18,Stamped Shaker,Shaker,Non-insulated,Double,2550,695,"$1,384.00",Yes,NA,Yes,510.08,620.66,NA,NA,235.42,NA,NA,NA,NA,Yes
+Traditional,19,Stamped Shaker,Shaker,Insulated,Single,2583,595.00,"$1,233.12",Yes,647.06,Yes,353.12,399.34,454.8,602.7,122,NA,NA,NA,NA,Yes
+Traditional,20,Stamped Shaker,Shaker,Insulated,Double,2583,695,"$2,170.44",Yes,"1,294.12",Yes,706.22,798.66,909.58,"1,205.38",244.04,NA,NA,NA,NA,Yes
+Traditional,21,Recessed Panel,Short Panel,Insulated,Single,2298,595.00,"$2,468.62",Yes,NA,Yes,522,556.8,613.35,778.65,182.7,NA,NA,NA,NA,NA
+Traditional,22,Recessed Panel,Short Panel,Insulated,Double,2298,695.00,"$4,473.98",Yes,NA,Yes,"1,044","1,113.60","1,226.70","1,557.30",365.4,NA,NA,NA,NA,NA
+Traditional,23,Recessed Panel,Long Panel,Insulated,Single,2294,595.00,"$2,298.98",Yes,NA,Yes,522,556.8,613.35,778.65,221.86,NA,NA,NA,NA,NA
+Traditional,24,Recessed Panel,Long Panel,Insulated,Double,2248,695.00,"$4,136.86",Yes,NA,Yes,"1,044","1,113.60","1,226.70","1,557.30",443.7,NA,NA,NA,NA,NA
+Traditional,25,Recessed Panel,Flush,Insulated,Single,2291,595.00,"$2,298.98",Yes,NA,Yes,522,556.8,613.35,778.65,221.86,NA,NA,NA,NA,NA
+Traditional,26,Recessed Panel,Flush,Insulated,Double,2291,695.00,"$4,136.86",Yes,NA,Yes,"1,044","1,113.60","1,226.70","1,557.30",443.7,NA,NA,NA,NA,NA
+Contemporary,27,Planks,Short Windows,Insulated,Single,2327,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Contemporary,,Planks,Short Windows,Insulated,Double,2327,695,"$2,170.44",Yes,"1,294.12",Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,NA,NA,NA
+Contemporary,,Planks,Long Windows,Insulated,Single,2347,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Contemporary,,Planks,Long Windows,Insulated,Double,2347,695,"$2,170.44",Yes,"1,294.12",Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,NA,NA,NA
+Contemporary,,Planks,Narrow,Insulated,Single,2347,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,NA,NA,NA,44.36,NA,NA
+Contemporary,,Planks,Narrow,Insulated,Double,2347,695,"$2,170.44",Yes,1294.12,Yes,635.98,717.32,791.26,"1,198.00",NA,NA,NA,88.72,NA,NA
+Contemporary,,Skyline Flush,Short Windows,Non-insulated,Single,2150,595.00,$786.52,Yes,NA,Yes,246.1,299.64,395.64,599,110.94,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Short Windows,Non-insulated,Double,2150,695.00,"$1,384.00",Yes,NA,Yes,492.26,599.26,791.26,1198,221.84,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Short Windows,Insulated,Single,2127,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Short Windows,Insulated,Double,2127,695.00,"$2,170.44",Yes,"1,294.12",Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Long Windows,Non-insulated,Single,4150,595.00,$786.52,Yes,NA,Yes,246.1,299.64,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Long Windows,Non-insulated,Double,4150,695.00,"$1,384.00",Yes,NA,Yes,492.26,599.26,791.26,1198,221.84,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Long Windows,Insulated,Single,2147,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Long Windows,Insulated,Double,2147,695.00,"$2,170.44",Yes,"1,294.12",Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,NA,NA,NA
+Contemporary,,Skyline Flush,Narrow,Insulated,Single,2147,595.00,"$1,233.12",Yes,647.06,Yes,317.98,358.66,395.64,599.00,110.94,NA,NA,44.36,NA,NA
+Contemporary,,Skyline Flush,Narrow,Insulated,Double,2147,695.00,"$2,170.44",Yes,1294.12,Yes,635.98,717.32,791.26,"1,198.00",221.84,NA,NA,88.72,NA,NA
+Contemporary,,Aluminum,Full-View,Non-insulated,Single,3295R,795.00,"$4,405.00",Yes,NA,Yes,0,NA,0,0.00,NA,NA,NA,NA,NA,NA
+Contemporary,,Aluminum,Full-View,Non-insulated,Double,3295R,995,"$6,805.00",Yes,NA,Yes,0,NA,0,0.00,NA,NA,NA,NA,NA,NA
+Contemporary,,Aluminum,Full-View,Insulated,Single,3297R,NA,NA,Yes,NA,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Contemporary,,Aluminum,Full-View,Insulated,Double,3297R,NA,NA,Yes,NA,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Contemporary,,Sterling,Flush,Insulated,Single,2783,NA,NA,Yes,NA,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Contemporary,,Sterling,Flush,Insulated,Double,2783,NA,NA,Yes,NA,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Carriage,,Steel Overlay,Any Design,Insulated,Single,5300,795.00,"$3,135.56",Yes,NA,Yes,719.06,756.24,793.46,1128.18,Mixed,122.94,224.18,NA,NA,Yes
+Carriage,,Steel Overlay,Any Design,Insulated,Double,5300,995.00,"$4,992.71",Yes,NA,Yes,1217.25,1279.22,1341.22,1675.94,Mixed,245.87,448.36,NA,NA,Yes
+Carriage,,Fiber Glass Overlay,Any Design,Insulated,Single,5500,795.00,"$4,929.43",Yes,NA,Yes,719.06,756.24,793.46,1128.18,Mixed,122.94,224.18,NA,NA,Yes
+Carriage,,Fiber Glass Overlay,Any Design,Insulated,Double,5500,995.00,"$8,138.20",Yes,NA,Yes,1217.25,1279.22,1341.22,1675.94,Mixed,245.87,448.36,NA,NA,Yes
+Carriage,,Shoreline,Any Design,Insulated,Single,5602,795.00,"$5,198.81",NA,0,Yes,795.51,828.04,860.59,"1,247.50",Mixed,159.09,314.58,NA,NA,Yes
+Carriage,,Shoreline,Any Design,Insulated,Double,5602,995.00,"$8,296.24",NA,0,Yes,"1,363.72","1,419.51","1,475.31","2,138.57",Mixed,272.75,539.3,NA,NA,Yes
+Carriage,,Wood Overlay,Any Design,Insulated,Single,5400,NA,NA,NA,NA,Yes,NA,NA,NA,NA,Mixed,NA,NA,NA,NA,NA
+Carriage,,Wood Overlay,Any Design,Insulated,Double,5400,NA,NA,NA,NA,Yes,NA,NA,NA,NA,Mixed,NA,NA,NA,NA,NA

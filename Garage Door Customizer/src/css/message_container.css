@@ -1,0 +1,98 @@
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh; /* Replace 70px with your header's height if different */
+  min-height:100svh;
+  min-width: 100%;
+  background: linear-gradient(to bottom, var(--color-orange-main), var(--color-orange-light));
+}
+
+.message-box {
+  background: var(--color-orange-main);
+  border-radius: 14px;
+  box-shadow: 0 0px 8px  4px rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  max-width: 620px;
+  width: 95%;
+  height: fit-content;
+  text-align: center;
+  border: 2px solid black;
+}
+.door-not-found.message-box {
+   padding: 2px;
+}
+@media(max-width:600px){
+  .door-not-found.message-box {
+   font-size:0.85em;
+}
+}
+.message-title {
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.message {
+  text-align:left;
+  color: var(--color-grey);
+  margin-bottom: 25px;
+  line-height: 1.5;
+  font-size:1.5em;
+}
+
+.contact-info {
+  text-align: left;
+  /* margin-bottom: 30px; */
+  color: black;
+}
+.contact-info a {
+  color: rgb(48, 33, 180); /* or any color you want */
+  font-weight: 600; /* optional, make it bolder */
+}
+
+.contact-info p {
+  display: flex;
+  flex-wrap: wrap;        /* allows the value to wrap to the next line */
+  align-items: baseline;
+  gap: 4px 8px;
+  margin: 8px 0;
+  font-weight:900;
+  font-size:1em;
+}
+
+/* The span (value) takes remaining space and can wrap */
+.contact-info p > span {
+  text-align:left;
+  flex: 1 1 0;
+  min-width: 0;           /* critical for wrapping in flex layouts */
+ 
+}
+@media(min-width:800px){
+  .contact-info p{font-size:1.5em}
+}
+/* Long tokens inside the link won’t overflow; they’ll break nicely */
+.contact-info p > span a {
+  overflow-wrap: anywhere;  /* modern */
+  word-break: break-word;   /* fallback */
+}
+.message-container .back-btn {
+ width:30%;
+ margin-right:10px;
+}
+.message-container .back-btn:hover{
+  transform:scale(1.05);
+  background-color: var(--color-grey);
+}
+.message-container .back-btn:active {
+  transform: translateY(1px);
+}
+
+.message-container .home-btn{
+  width:30%;
+  box-shadow:none;
+}
+.message-container .home-btn:hover{
+  transform:scale(1.05);
+  background-color: var(--color-grey);
+}

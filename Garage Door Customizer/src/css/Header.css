@@ -1,0 +1,291 @@
+
+/* Header container */
+/* .click-overlay {
+  position: fixed;
+  inset: 0; 
+  background: red; 
+  z-index: 0;
+}
+
+.header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:2em;
+  background-color: #222;
+  color: white;
+  padding: 1em 0;
+  top:0em;;
+  width: 100%;
+  max-width:100%;
+  position: relative;
+  z-index:999;
+  transition:top 0.3s ease-in-out;
+  height: 70px;
+}
+.mobile-header{
+  position:relative;
+  justify-content:space-evenly;
+  padding:1em 1em;
+}
+.menu {
+  margin:0;
+	position: relative;
+}
+.start-over{
+  background-color: var(--color-yellow);
+  justify-self: flex-start;
+  height:2em;
+}
+ .menu-title {
+  background: none;
+  color:white;
+}
+.menu-title:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: var(--color-orange-dark);
+  border-radius: 8px;
+  right: 50%;
+  transform: translateX(50%);
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease;
+  z-index: 10;
+  padding: 0em 0.25em;
+  outline: 2px solid black;
+  width: max-content;    
+  max-width: 350px;    
+  list-style: none;;    
+}
+
+.show-dropdown {
+  display: inline-block;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 900;
+  z-index: 10;
+  font-size: 1.5em;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  margin:0.5em 0;
+  text-decoration: underline;
+}
+
+.dropdown-item:hover {
+   background-color: rgba(70, 60, 63, 0.25);
+} 
+.dropdown.gallery-dropdown{
+  position: absolute;
+  top: 145%;
+  right:375%;
+  width:95vw;
+  max-width:99vw;
+  display:hidden;
+}
+.dropdown.gallery-dropdown.show-dropdown{
+  display:flex;
+}
+@media (max-width:980px){
+  .menu-title {
+    font-size: 1.5em;
+  }
+  #gallery-dropdown{
+    right:400%;
+    top: 165%;
+  }
+}
+.dropdown-submenu{
+  text-align:center;
+}
+.submenu-title{
+  font-size:2em;
+  font-weight: 900;
+  padding:0em 0;
+  cursor: pointer;
+  list-style: none;
+} */
+
+
+/*Mobile*/
+/* .hamburger-btn {
+  width:2.5em;
+  height:2em;
+  padding:0;
+  border-radius:8px;
+  background-color:  var(--color-orange-dark);
+  color: black;
+}
+.hamburger-btn:hover {
+  background-color: var(--color-orange-light);
+}
+.hamburger-icon-wrapper,.hamburger-icon-wrapper > * {
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+.close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25em;
+  line-height: 1;  
+  width: 100%;
+  height: 100%;
+}
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background: rgba(0,0,0,0.4); 
+  z-index: 998; 
+}
+.mobile-menu-dialog {
+  position: absolute;
+  width:100%;
+  top: 99%;
+  left: 0;
+  background-color: #222;
+  z-index: 999;
+  overflow:visible;
+} 
+
+.mobile-dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mobile-dropdown-item {
+  border-bottom: 1px solid #444;
+}
+.mobile-dropdown-title {
+  padding: 0.5em 0em;
+  font-size:1.75rem;
+  cursor: pointer;
+  background-color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.mobile-dropdown-title:hover {
+  background-color: #444;
+}
+
+.mobile-dropdown-sublist {
+  background-color: #2a2a2a;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.mobile-dropdown-subitem {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0.5em 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mobile-dropdown-subitem:hover {
+  color: var(--color-orange-light);
+} */
+/* 
+#menu-container{
+  position:relative;
+  width: clamp(35px, 15vw, 70px);
+}
+.menu-btn {
+  width: 100%; 
+  height: auto;
+  background-color:  var(--color-orange-dark);
+  color: black;
+}
+.menu-icon {
+  width: 100%;
+  height: auto;
+}
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5); 
+  z-index: 998; 
+}
+.menu-dialog {
+  position: absolute;
+  min-width: 220px;
+  max-width: 90vw; 
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 0 8px 8px rgba(0,0,0,0.5);
+  z-index: 999;
+  overflow:visible;
+  background-color: var(--color-orange-main);
+}
+#dialog-door{
+  font-size:2em;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: transform 0.2s ease-in-out;
+}
+@media (max-width: 600px) {
+  #dialog-door{font-size:1.5em;}
+}
+@media (max-width: 380px) {
+  #dialog-door{font-size:1.25em;}
+}
+#dialog-door:hover{
+  background-color: rgba(70, 60, 63, 0.25);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+#dialog-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap:0.5em;
+  margin-top: 0.5em;
+  font-size:1.25em;
+}
+@media (max-width: 600px) {
+  #dialog-buttons{font-size:1em;}
+}
+#dialog-buttons >button{width:45%;}
+#dialog-buttons > button:first-of-type{
+  background-color: var(--color-yellow);
+}
+#dialog-buttons > button:last-of-type{
+  background-color: var(--color-orange-dark);
+}  */
+/* 
+
+In Header.css, fix the dropdown display and avoid unintended overflow:
+Change this:
+.dropdown.gallery-dropdown { ... display:hidden; }
+To this:
+.dropdown.gallery-dropdown { ... display:none; }
+Keep the “open” rule as-is so it only shows when toggled:
+.dropdown.gallery-dropdown.show-dropdown { display:flex; }
+Optional hardening: replace width:95vw; max-width:99vw; with width:min(95svw, 100%); max-width:100svw; to avoid scrollbar-inclusive vw.
+Keep overflow-x protection at the root:
+You already have html, body { overflow-x: hidden; } in index.css — that’s fine. If you prefer stricter clipping without scrollbars, overflow-x: clip; is even tighter. */

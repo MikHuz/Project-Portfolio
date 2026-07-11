@@ -2,22 +2,35 @@
 #centering-div{
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   row-gap:0.5em;
-  min-height:100vh;
-  min-width:98vw;
+  min-height: 100dvh;
+  max-width:100%;
   background: linear-gradient(to right, var(--color-orange-main),var(--color-yellow));
-  padding:0.25rem 0;
+  padding:1rem 0;
+    /* Prevent costly reflows during rubber-band by containing layout */
+  /* (optional; remove if it ever hides needed overflow effects) */
+  /* contain: layout paint; */
+
+  /* Optional: hint that nothing transforms, reducing reflow work */
+  will-change: scroll-position;
+}
+@supports not (height: 100dvh) {
+  #centering-div {
+    min-height:100vh;
+  }
+}
+@media (max-width: 768px) {
+  #centering-div{
+    /* height: auto; */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: none;
+  }
 }
 #centering-div > a{
   width:45%;
   margin:0;
-}
-.home-btn{
-  background-color:var(--color-orange-dark);
-  width:100%;
- box-shadow: 6px 6px 3px rgba(0,0,0,0.5);
 }
 .subtype-container {
   display: flex;
@@ -46,7 +59,7 @@
 }
 
  @media (min-width:1080px){
-.subtype-carousel{width:75%;height:70vh}
+.subtype-carousel{width:70%;height:70dvh}
 }  
 .subtype-inner{
   width: 100%;
