@@ -2,85 +2,68 @@
 
 ## 🧭 Overview  
 
-The **Garage Door Customizer** is a **fully responsive, single-page React web app** designed to let users **browse, customize, and request quotes for garage doors** — all in one smooth, dynamic interface.  
+The **Garage Door Customizer** is a **user-focused, responsive web app** designed to help customers **easily explore, configure, and request quotes for garage doors**. Built directly from **real customer feedback and business requirements**, the app streamlines the purchasing process and removes friction from traditional quote requests.  
 
-The workflow is structured around a guided experience:  
-1. **Category Carousel:** Explore garage door categories through an interactive, swipeable carousel.  
-2. **Model Selection:** View and compare doors within each category, using dynamic carousels that update as new data is parsed.  
-3. **Dynamic Build Section:** Configure a door’s attributes — style, size, windows, finish, and more — with each selection filtering the next available options and updating pricing in real time.  
+The workflow is tailored to make the user experience simple and intuitive:  
+1. **Browse Categories:** Customers can explore garage door styles and types through an interactive carousel, making discovery easy and visual.  
+2. **Compare Models:** Users can see and compare options within each category, ensuring informed choices without endless back-and-forth.  
+3. **Configure Your Door:** A guided, dynamic configuration tool lets users select size, style, finish, windows, and other features — updating pricing instantly and only showing valid options.  
 
-The app operates without a traditional backend. Instead, it loads a **CSV dataset** containing all valid combinations of door options, which are dynamically parsed and transformed into React state on the fly.  
-
-Users can even **drag and drop a new CSV file**, instantly reloading the app’s dataset to reflect different pricing or availability scenarios — no code changes required.  
-
-Selections are **persistent** via local storage and **shareable** through **URL parameters** — meaning users can directly open or share preconfigured builds or be given their desired doors already created for them. 
-
-> **Note:** This project was developed as a volunteer contribution for **Reliable Garage Door** and demonstrates scalable, dynamic frontend engineering which reflects real world needs. 
+By letting customers **self-configure doors and instantly receive accurate quotes**, the app reduces manual workload for the business, speeds up response time, and increases the likelihood of conversion from interest to purchase.
 
 ---
 
-## 🌟 Features  
+## 🌟 User & Business Impact  
 
-- 💾 **CSV-Driven Dynamic Data:**  
-  Drop in a CSV file, and the app instantly parses it into usable configuration data. Door options, dependencies, and prices are all dynamically updated — enabling flexible, data-driven behavior.  
+- 💡 **Built from Real Customer Needs:**  
+  Each feature was designed to address specific pain points expressed by actual clients — from confusing options to slow quote delivery. This meant the business could address what their customers wanted most, maximizing their experience and boosting
 
-- 🔗 **URL-Parameterized Builds:**  
-  Combination of door options can be partially or fully preselected via the URL. These links can be shared or bookmarked to reopen a specific configuration instantly.  
+- ⏱️ **Faster, Frictionless Quotes:**  
+  Users can complete their configuration in minutes, generating actionable quote requests automatically, freeing up staff time for higher-value tasks and boosting user engagement (also contributed to google site domain engagement staistics for site SEO) 
 
-- 🔄 **Interactive Guided Workflow:**  
-  A clear step-by-step UI takes users from general categories to detailed configurations without losing context or state.  
+- 📲 **Shareable & Persistent Configurations:**  
+  Customers can save and share their configurations via a simple link, improving collaboration between homeowners, contractors, and the business team. This feature was embedded within the companies main site, allowing users to browse real photos and instantly see its configuration and price and make a request.
 
-- 🧩 **Dynamic Option Dependencies:**  
-  Each selection filters subsequent available choices in real time, ensuring only valid combinations are selectable.  
+  - 📈 **Data-Driven Flexibility:**  
+  Staff can upload new datasets to immediately reflect updated products, prices, or availability — empowering the business to adapt quickly without development delays.
 
-- 🏷️ **Responsive and Adaptive Layout:**  
-  Automatically scales images and layout elements for different viewport sizes, from mobile to desktop.  
+- 🧩 **Error-Free Selections:**  
+  Dynamic option dependencies prevent invalid configurations, ensuring quotes are always accurate to the unique configuration and reducing errors in order processing.  
 
-- 🧠 **Persistent State and Smooth Transitions:**  
-  User progress is saved locally, so returning to the page restores selections. React Router and controlled state minimize re-renders and ensure smooth page transitions.  
-
-- 📈 **API Calls:**  
-  Backend interactions are simulated with dynamic fetch behavior, providing a realistic data flow without an actual server.  
-
----
-
-## 🛠️ Technical Highlights  
-
-- ⚙️ **CSV Parsing and Data Normalization:**  
-  On startup or CSV upload, the app parses structured data to generate configuration trees. This eliminates hardcoding and allows rapid updates.  
-
-- 🌐 **URL-Based Preselection System:**  
-  URL parameters are dynamically mapped to internal React state, enabling quick restoration of complex configurations.  
-
-- 🧮 **Real-Time Pricing Engine:**  
-  The app computes pricing dynamically based on the selected combination of attributes — pulling directly from parsed CSV values.  
-
-- 🧱 **Componentized Architecture:**  
-  Each step (Category, Model, Build) is an isolated React component communicating through controlled props and context, keeping state predictable and performance optimized.  
+- 🌐 **Accessible Anywhere:**  
+  Fully responsive design ensures users on phones, tablets, or desktops have the same seamless experience, expanding reach and accessibility. Mobile design first was the approach in order to best address customer needs.
 
 - 🖼️ **Viewport-Aware Image Loading:**  
   Uses dynamic imports to load only the necessary image variants (webp/jpg) for the user’s device size, reducing bandwidth and improving load times.  
 
-- 💡 **Error-Resilient State Handling:**  
-  Includes graceful fallbacks for incomplete URL states or missing data, ensuring the app doesn't break under partial configurations.  
----
-
-## 🧰 Technologies Used  
-
-| Technology | Purpose |
-|-------------|----------|
-| **React** | Component-based UI and state management |
-| **React Router** | SPA navigation and URL preselection logic |
-| **JavaScript (ES6)** | Core logic for CSV parsing, dynamic rendering, and data binding |
-| **HTML / CSS** | Responsive design and custom layout styling |
-| **Local Storage** | Persistence of user selections |
-| **Dynamic Imports** | On-demand image and data loading for performance |
-| **Fetch API** | Simulated backend data retrieval |
+  🧱 **Componentized Architecture:**  
+  Each step (Category, Model, Build) is an isolated React component communicating through controlled props and context, taking advantage of React's state and component based architecture, leading to predictability and optimized performance. 
 
 ---
 
-### 🎬 Full Demo Video  
-A detailed walkthrough is included in the repository:  
+## 🛠️ How It Works  
+
+While technical underpinnings exist, the real value comes from how the app **supports decision-making and improves operations**:  
+
+- Users follow a **guided workflow** that takes them from browsing to final configuration without confusion.  
+- **Real-time pricing and validation** make the process accurate and trustworthy.  
+- **Database-driven data** enables staff to update offerings without touching code, keeping information current and reliable.  
+
+---
+
+## 🧰 Technologies  
+
+| Technology | Business/User Benefit |
+|------------|---------------------|
+| **React & React Router** | Smooth, interactive user experience with persistent, shareable state |
+| **Dynamic Data Handling (CSV)** | Quick updates to products and pricing without developer intervention |
+| **Responsive HTML/CSS** | Access from any device, ensuring consistent customer experience |
+| **Local Storage & URL Parameters** | Save and share configurations easily, improving collaboration and repeat visits |
+
+---
+
+### 🎬 Demo  
+A short walkthrough video demonstrates the guided experience and dynamic configuration:  
 `Garage-door-demo.mp4`  
 
-> **Note:** The video may show minor lag due to recording software — the live app runs significantly smoother. Some features in door options were omitted in the demo and the repo for brevity.  
+> **NOTE:** This video and repo files does not fully reflect the updated production app state, it is meant to provide the snapshot of what was built, this repo is not the one used for production development. Live app performance is also smoother than the recorder software allowed; some app extended options were omitted for brevity.

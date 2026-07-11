@@ -27,7 +27,7 @@ AI Integration •• Prompt Engineering • Chatbots • Voice/SMS Agents • T
 
 ### Currently Exploring
 - Agentic AI workflows and their capabilities 
-- eeper AI orchestration Cloud infrastructure (Azure) an
+- Deeper AI orchestration Cloud infrastructure (Azure) an
 - Cybersecurity fundamentals to build more secure, reliable systems
 
 ## Selected Projects Overview
@@ -72,6 +72,6 @@ AI Integration •• Prompt Engineering • Chatbots • Voice/SMS Agents • T
 Open to full-time SWE roles where I can contribute to impactful, efficient products. Let's connect!
 
 📫 **michaelhuziywork@gmail.com** • [LinkedIn](https://www.linkedin.com/in/michael-h-640884251) • [Resume](https://github.com/MikHuz/Michael_Huziy_Resume/raw/1c749210b069595204c062f7b3a256ddac8ba34d/Michael_Huziy_Resume.pdf) • San Francisco Bay Area, CA
-Thanks for visiting! 🚀
 
+Thanks for visiting! 🚀
 
